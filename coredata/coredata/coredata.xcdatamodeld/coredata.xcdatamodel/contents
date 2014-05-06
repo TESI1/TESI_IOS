@@ -38,7 +38,7 @@
         <element name="Dati" positionX="-99" positionY="-604" width="128" height="163"/>
         <element name="Necessita" positionX="-101" positionY="-378" width="128" height="103"/>
         <element name="Piattaforme" positionX="-299" positionY="-430" width="128" height="88"/>
-        <element name="Stanze" positionX="-603" positionY="-396" width="126" height="103"/>
+        <element name="Stanze" positionX="-513" positionY="-328" width="126" height="103"/>
         <element name="Utenti" positionX="-297" positionY="-298" width="128" height="118"/>
     </elements>
 </model>
