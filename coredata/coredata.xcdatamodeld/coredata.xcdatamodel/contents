@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C1021" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Dati" representedClassName="Dato" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id_dato" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="ora" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="valore_luminosita" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="valore_purezzaAria" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="valore_temperatura" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="valore_umidita" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="dati_to_piattaforma" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Piattaforme" inverseName="piattaforma_to_dati" inverseEntity="Piattaforme" syncable="YES"/>
+    </entity>
+    <entity name="Necessita" representedClassName="Necessita" syncable="YES">
+        <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id_necessita" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="necessita_to_utenti" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Utenti" inverseName="utenti_to_necessita" inverseEntity="Utenti" syncable="YES"/>
+    </entity>
+    <entity name="Piattaforme" representedClassName="Piattaforma" syncable="YES">
+        <attribute name="id_piattaforma" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="piattaforma_to_dati" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Dati" inverseName="dati_to_piattaforma" inverseEntity="Dati" syncable="YES"/>
+        <relationship name="piattaforma_to_stanze" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Stanze" inverseName="stanze_to_piattaforma" inverseEntity="Stanze" syncable="YES"/>
+    </entity>
+    <entity name="Stanze" representedClassName="Stanza" syncable="YES">
+        <attribute name="id_stanza" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stanze_to_piattaforma" optional="YES" maxCount="1" deletionRule="Deny" destinationEntity="Piattaforme" inverseName="piattaforma_to_stanze" inverseEntity="Piattaforme" syncable="YES"/>
+        <relationship name="stanze_to_utenti" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Utenti" inverseName="utenti_to_stanze" inverseEntity="Utenti" syncable="YES"/>
+    </entity>
+    <entity name="Utenti" representedClassName="Utente" syncable="YES">
+        <attribute name="eta" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="id_utente" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="utenti_to_necessita" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Necessita" inverseName="necessita_to_utenti" inverseEntity="Necessita" syncable="YES"/>
+        <relationship name="utenti_to_stanze" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Stanze" inverseName="stanze_to_utenti" inverseEntity="Stanze" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Dati" positionX="-99" positionY="-604" width="128" height="163"/>
+        <element name="Necessita" positionX="-101" positionY="-378" width="128" height="103"/>
+        <element name="Piattaforme" positionX="-299" positionY="-430" width="128" height="88"/>
+        <element name="Stanze" positionX="-513" positionY="-328" width="126" height="103"/>
+        <element name="Utenti" positionX="-297" positionY="-298" width="128" height="118"/>
+    </elements>
+</model>
