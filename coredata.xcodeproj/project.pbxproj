@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		862D3664A0324C7EA9966EF5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49554E5BF0146699048A19C /* libPods.a */; };
+		AB284F97191E164E007E7B6A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB284F96191E164E007E7B6A /* CoreBluetooth.framework */; };
+		AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */; };
+		AB284FE1191E2289007E7B6A /* Storyboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB284FE0191E2289007E7B6A /* Storyboard_iPad.storyboard */; };
 		C79A60FA1918FC220075AABD /* _Dato.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60E71918FC220075AABD /* _Dato.m */; };
 		C79A60FB1918FC220075AABD /* _Necessita.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60E91918FC220075AABD /* _Necessita.m */; };
 		C79A60FC1918FC220075AABD /* _Piattaforma.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60EB1918FC220075AABD /* _Piattaforma.m */; };
@@ -47,6 +50,13 @@
 
 /* Begin PBXFileReference section */
 		52FA383E662D4434A7FF9474 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		AB284F96191E164E007E7B6A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		AB284F99191E1799007E7B6A /* BLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		AB284F9A191E1799007E7B6A /* BLE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		AB284F9B191E1799007E7B6A /* BLEDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		AB284F9C191E1833007E7B6A /* Input_Sensor1_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input_Sensor1_ViewController.h; sourceTree = "<group>"; };
+		AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input_Sensor1_ViewController.m; sourceTree = "<group>"; };
+		AB284FE0191E2289007E7B6A /* Storyboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iPad.storyboard; sourceTree = "<group>"; };
 		C79A60E61918FC220075AABD /* _Dato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Dato.h; sourceTree = "<group>"; };
 		C79A60E71918FC220075AABD /* _Dato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Dato.m; sourceTree = "<group>"; };
 		C79A60E81918FC220075AABD /* _Necessita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Necessita.h; sourceTree = "<group>"; };
@@ -93,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB284F97191E164E007E7B6A /* CoreBluetooth.framework in Frameworks */,
 				C7C70A211914FC2C005C2917 /* CoreGraphics.framework in Frameworks */,
 				C7C70A251914FC2C005C2917 /* CoreData.framework in Frameworks */,
 				C7C70A231914FC2C005C2917 /* UIKit.framework in Frameworks */,
@@ -115,6 +126,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB284F98191E1799007E7B6A /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				AB284F99191E1799007E7B6A /* BLE.h */,
+				AB284F9A191E1799007E7B6A /* BLE.m */,
+				AB284F9B191E1799007E7B6A /* BLEDefines.h */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
 		C79A60E51918FC220075AABD /* file_macchina */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +177,8 @@
 		C7C70A1D1914FC2C005C2917 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB284F98191E1799007E7B6A /* BLE */,
+				AB284F96191E164E007E7B6A /* CoreBluetooth.framework */,
 				C7C70A1E1914FC2C005C2917 /* Foundation.framework */,
 				C7C70A201914FC2C005C2917 /* CoreGraphics.framework */,
 				C7C70A221914FC2C005C2917 /* UIKit.framework */,
@@ -171,6 +194,9 @@
 			children = (
 				C7C70A2F1914FC2C005C2917 /* AppDelegate.h */,
 				C7C70A301914FC2C005C2917 /* AppDelegate.m */,
+				AB284FE0191E2289007E7B6A /* Storyboard_iPad.storyboard */,
+				AB284F9C191E1833007E7B6A /* Input_Sensor1_ViewController.h */,
+				AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */,
 				C79A60F01918FC220075AABD /* Dato.h */,
 				C79A60F11918FC220075AABD /* Dato.m */,
 				C79A60F21918FC220075AABD /* Necessita.h */,
@@ -297,6 +323,7 @@
 			files = (
 				C7C70A2B1914FC2C005C2917 /* InfoPlist.strings in Resources */,
 				C7C70A361914FC2C005C2917 /* Images.xcassets in Resources */,
+				AB284FE1191E2289007E7B6A /* Storyboard_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +384,7 @@
 				C79A60FA1918FC220075AABD /* _Dato.m in Sources */,
 				C7C70A2D1914FC2C005C2917 /* main.m in Sources */,
 				C79A61031918FC220075AABD /* Utente.m in Sources */,
+				AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */,
 				C79A60FF1918FC220075AABD /* Dato.m in Sources */,
 				C79A60FB1918FC220075AABD /* _Necessita.m in Sources */,
 				C7C70A341914FC2C005C2917 /* coredata.xcdatamodeld in Sources */,
