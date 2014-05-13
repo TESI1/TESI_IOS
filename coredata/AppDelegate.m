@@ -18,10 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    // Override point for customization after application launch.
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    Input_Sensor1_ViewController *input_view_controller = [[Input_Sensor1_ViewController alloc] init];
+    
+    self.window.rootViewController = input_view_controller;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
