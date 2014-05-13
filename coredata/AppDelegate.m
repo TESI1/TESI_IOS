@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Input_Sensor1_ViewController.h"
+#import "StartViewController.h"
 
 @implementation AppDelegate
 
@@ -20,9 +21,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    Input_Sensor1_ViewController *input_view_controller = [[Input_Sensor1_ViewController alloc] init];
+    StartViewController *startViewController = [[StartViewController alloc]init];
     
-    self.window.rootViewController = input_view_controller;
+    self.window.rootViewController = startViewController;
     
     [self.window makeKeyAndVisible];
     

@@ -10,6 +10,7 @@
 		862D3664A0324C7EA9966EF5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49554E5BF0146699048A19C /* libPods.a */; };
 		AB284F97191E164E007E7B6A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB284F96191E164E007E7B6A /* CoreBluetooth.framework */; };
 		AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */; };
+		AB2A3B781922766300703B4E /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A3B771922766300703B4E /* StartViewController.m */; };
 		C79A60FA1918FC220075AABD /* _Dato.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60E71918FC220075AABD /* _Dato.m */; };
 		C79A60FB1918FC220075AABD /* _Necessita.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60E91918FC220075AABD /* _Necessita.m */; };
 		C79A60FC1918FC220075AABD /* _Piattaforma.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60EB1918FC220075AABD /* _Piattaforma.m */; };
@@ -55,6 +56,8 @@
 		AB284F9B191E1799007E7B6A /* BLEDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		AB284F9C191E1833007E7B6A /* Input_Sensor1_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input_Sensor1_ViewController.h; sourceTree = "<group>"; };
 		AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input_Sensor1_ViewController.m; sourceTree = "<group>"; };
+		AB2A3B761922766300703B4E /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		AB2A3B771922766300703B4E /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		C79A60E61918FC220075AABD /* _Dato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Dato.h; sourceTree = "<group>"; };
 		C79A60E71918FC220075AABD /* _Dato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Dato.m; sourceTree = "<group>"; };
 		C79A60E81918FC220075AABD /* _Necessita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Necessita.h; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 			children = (
 				C7C70A2F1914FC2C005C2917 /* AppDelegate.h */,
 				C7C70A301914FC2C005C2917 /* AppDelegate.m */,
+				AB2A3B761922766300703B4E /* StartViewController.h */,
+				AB2A3B771922766300703B4E /* StartViewController.m */,
 				AB284F9C191E1833007E7B6A /* Input_Sensor1_ViewController.h */,
 				AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */,
 				C79A60F01918FC220075AABD /* Dato.h */,
@@ -383,6 +388,7 @@
 				AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */,
 				C79A60FF1918FC220075AABD /* Dato.m in Sources */,
 				C79A60FB1918FC220075AABD /* _Necessita.m in Sources */,
+				AB2A3B781922766300703B4E /* StartViewController.m in Sources */,
 				C7C70A341914FC2C005C2917 /* coredata.xcdatamodeld in Sources */,
 				C79A61001918FC220075AABD /* Necessita.m in Sources */,
 			);

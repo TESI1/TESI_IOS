@@ -7,6 +7,7 @@
 //
 
 #import "Input_Sensor1_ViewController.h"
+#import "StartViewController.h"
 
 @interface Input_Sensor1_ViewController ()
 
@@ -29,8 +30,43 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor greenColor];
+    self.view.backgroundColor = [UIColor redColor];
+    
+    
+    swDigitalIn = [[UISwitch alloc]initWithFrame:CGRectMake(250, 60, 130, 30)];
+    [self.view addSubview:swDigitalIn];
+    
+    swDigitalOut = [[UISwitch alloc]initWithFrame:CGRectMake(250, 160, 130, 30)];
+    [self.view addSubview:swDigitalOut];
+    
+    swAnalogIn = [[UISwitch alloc]initWithFrame:CGRectMake(250, 260, 130, 30)];
+    [self.view addSubview:swAnalogIn];
+    
+    lblAnalogIn = [[UILabel alloc]initWithFrame:CGRectMake(50, 60, 130, 30)];
+    lblAnalogIn.text = @"---";
+    [self.view addSubview:lblAnalogIn];
+    
+    lblRSSI = [[UILabel alloc]initWithFrame:CGRectMake(250, 30, 130, 30)];
+    lblRSSI.text = @"---";
+    [self.view addSubview:lblRSSI];
+    
+    
+    CGRect rect = [[UIScreen mainScreen]applicationFrame];
+    btnDisConnect = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [btnDisConnect setFrame:CGRectMake(rect.size.width/2-110, rect.size.height/2-55, 250, 400)];
+    [btnDisConnect setTitle:@"Disconnect" forState:UIControlStateNormal];
+    [btnDisConnect addTarget:self action:@selector(Disconnect) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnDisConnect];
 }
+
+-(void)Disconnect
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+
+
 
 - (void)didReceiveMemoryWarning
 {
