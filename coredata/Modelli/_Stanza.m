@@ -6,10 +6,11 @@
 const struct StanzaAttributes StanzaAttributes = {
 	.id_stanza = @"id_stanza",
 	.nome = @"nome",
+	.piattaforma = @"piattaforma",
 };
 
 const struct StanzaRelationships StanzaRelationships = {
-	.stanze_to_piattaforma = @"stanze_to_piattaforma",
+	.stanze_to_dati = @"stanze_to_dati",
 	.stanze_to_utenti = @"stanze_to_utenti",
 };
 
@@ -44,6 +45,11 @@ const struct StanzaFetchedProperties StanzaFetchedProperties = {
 	
 	if ([key isEqualToString:@"id_stanzaValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"id_stanza"];
+		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
+		return keyPaths;
+	}
+	if ([key isEqualToString:@"piattaformaValue"]) {
+		NSSet *affectingKey = [NSSet setWithObject:@"piattaforma"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
 		return keyPaths;
 	}
@@ -87,8 +93,43 @@ const struct StanzaFetchedProperties StanzaFetchedProperties = {
 
 
 
-@dynamic stanze_to_piattaforma;
+@dynamic piattaforma;
 
+
+
+- (int16_t)piattaformaValue {
+	NSNumber *result = [self piattaforma];
+	return [result shortValue];
+}
+
+- (void)setPiattaformaValue:(int16_t)value_ {
+	[self setPiattaforma:[NSNumber numberWithShort:value_]];
+}
+
+- (int16_t)primitivePiattaformaValue {
+	NSNumber *result = [self primitivePiattaforma];
+	return [result shortValue];
+}
+
+- (void)setPrimitivePiattaformaValue:(int16_t)value_ {
+	[self setPrimitivePiattaforma:[NSNumber numberWithShort:value_]];
+}
+
+
+
+
+
+@dynamic stanze_to_dati;
+
+	
+- (NSMutableSet*)stanze_to_datiSet {
+	[self willAccessValueForKey:@"stanze_to_dati"];
+  
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"stanze_to_dati"];
+  
+	[self didAccessValueForKey:@"stanze_to_dati"];
+	return result;
+}
 	
 
 @dynamic stanze_to_utenti;

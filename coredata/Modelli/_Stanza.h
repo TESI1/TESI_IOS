@@ -7,18 +7,20 @@
 extern const struct StanzaAttributes {
 	__unsafe_unretained NSString *id_stanza;
 	__unsafe_unretained NSString *nome;
+	__unsafe_unretained NSString *piattaforma;
 } StanzaAttributes;
 
 extern const struct StanzaRelationships {
-	__unsafe_unretained NSString *stanze_to_piattaforma;
+	__unsafe_unretained NSString *stanze_to_dati;
 	__unsafe_unretained NSString *stanze_to_utenti;
 } StanzaRelationships;
 
 extern const struct StanzaFetchedProperties {
 } StanzaFetchedProperties;
 
-@class Piattaforma;
+@class Dato;
 @class Utente;
+
 
 
 
@@ -60,9 +62,23 @@ extern const struct StanzaFetchedProperties {
 
 
 
-@property (nonatomic, strong) Piattaforma *stanze_to_piattaforma;
+@property (nonatomic, strong) NSNumber* piattaforma;
 
-//- (BOOL)validateStanze_to_piattaforma:(id*)value_ error:(NSError**)error_;
+
+
+@property int16_t piattaformaValue;
+- (int16_t)piattaformaValue;
+- (void)setPiattaformaValue:(int16_t)value_;
+
+//- (BOOL)validatePiattaforma:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSSet *stanze_to_dati;
+
+- (NSMutableSet*)stanze_to_datiSet;
 
 
 
@@ -78,6 +94,11 @@ extern const struct StanzaFetchedProperties {
 @end
 
 @interface _Stanza (CoreDataGeneratedAccessors)
+
+- (void)addStanze_to_dati:(NSSet*)value_;
+- (void)removeStanze_to_dati:(NSSet*)value_;
+- (void)addStanze_to_datiObject:(Dato*)value_;
+- (void)removeStanze_to_datiObject:(Dato*)value_;
 
 - (void)addStanze_to_utenti:(NSSet*)value_;
 - (void)removeStanze_to_utenti:(NSSet*)value_;
@@ -104,9 +125,18 @@ extern const struct StanzaFetchedProperties {
 
 
 
+- (NSNumber*)primitivePiattaforma;
+- (void)setPrimitivePiattaforma:(NSNumber*)value;
 
-- (Piattaforma*)primitiveStanze_to_piattaforma;
-- (void)setPrimitiveStanze_to_piattaforma:(Piattaforma*)value;
+- (int16_t)primitivePiattaformaValue;
+- (void)setPrimitivePiattaformaValue:(int16_t)value_;
+
+
+
+
+
+- (NSMutableSet*)primitiveStanze_to_dati;
+- (void)setPrimitiveStanze_to_dati:(NSMutableSet*)value;
 
 
 

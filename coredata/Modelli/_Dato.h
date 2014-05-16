@@ -15,13 +15,13 @@ extern const struct DatoAttributes {
 } DatoAttributes;
 
 extern const struct DatoRelationships {
-	__unsafe_unretained NSString *dati_to_piattaforma;
+	__unsafe_unretained NSString *dati_to_stanze;
 } DatoRelationships;
 
 extern const struct DatoFetchedProperties {
 } DatoFetchedProperties;
 
-@class Piattaforma;
+@class Stanza;
 
 
 
@@ -134,9 +134,9 @@ extern const struct DatoFetchedProperties {
 
 
 
-@property (nonatomic, strong) Piattaforma *dati_to_piattaforma;
+@property (nonatomic, strong) Stanza *dati_to_stanze;
 
-//- (BOOL)validateDati_to_piattaforma:(id*)value_ error:(NSError**)error_;
+//- (BOOL)validateDati_to_stanze:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -209,8 +209,8 @@ extern const struct DatoFetchedProperties {
 
 
 
-- (Piattaforma*)primitiveDati_to_piattaforma;
-- (void)setPrimitiveDati_to_piattaforma:(Piattaforma*)value;
+- (Stanza*)primitiveDati_to_stanze;
+- (void)setPrimitiveDati_to_stanze:(Stanza*)value;
 
 
 @end

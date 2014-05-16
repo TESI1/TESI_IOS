@@ -8,19 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		862D3664A0324C7EA9966EF5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49554E5BF0146699048A19C /* libPods.a */; };
+		AB14E55E192657310011FAA2 /* Dato.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E557192657310011FAA2 /* Dato.m */; };
+		AB14E55F192657310011FAA2 /* Necessita.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E559192657310011FAA2 /* Necessita.m */; };
+		AB14E560192657310011FAA2 /* Stanza.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E55B192657310011FAA2 /* Stanza.m */; };
+		AB14E561192657310011FAA2 /* Utente.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E55D192657310011FAA2 /* Utente.m */; };
+		AB14E56A192657900011FAA2 /* _Dato.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E563192657900011FAA2 /* _Dato.m */; };
+		AB14E56B192657900011FAA2 /* _Necessita.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E565192657900011FAA2 /* _Necessita.m */; };
+		AB14E56C192657900011FAA2 /* _Stanza.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E567192657900011FAA2 /* _Stanza.m */; };
+		AB14E56D192657900011FAA2 /* _Utente.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E569192657900011FAA2 /* _Utente.m */; };
 		AB284F97191E164E007E7B6A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB284F96191E164E007E7B6A /* CoreBluetooth.framework */; };
 		AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */; };
 		AB2A3B781922766300703B4E /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A3B771922766300703B4E /* StartViewController.m */; };
-		C79A60FA1918FC220075AABD /* _Dato.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60E71918FC220075AABD /* _Dato.m */; };
-		C79A60FB1918FC220075AABD /* _Necessita.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60E91918FC220075AABD /* _Necessita.m */; };
-		C79A60FC1918FC220075AABD /* _Piattaforma.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60EB1918FC220075AABD /* _Piattaforma.m */; };
-		C79A60FD1918FC220075AABD /* _Stanza.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60ED1918FC220075AABD /* _Stanza.m */; };
-		C79A60FE1918FC220075AABD /* _Utente.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60EF1918FC220075AABD /* _Utente.m */; };
-		C79A60FF1918FC220075AABD /* Dato.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60F11918FC220075AABD /* Dato.m */; };
-		C79A61001918FC220075AABD /* Necessita.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60F31918FC220075AABD /* Necessita.m */; };
-		C79A61011918FC220075AABD /* Piattaforma.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60F51918FC220075AABD /* Piattaforma.m */; };
-		C79A61021918FC220075AABD /* Stanza.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60F71918FC220075AABD /* Stanza.m */; };
-		C79A61031918FC220075AABD /* Utente.m in Sources */ = {isa = PBXBuildFile; fileRef = C79A60F91918FC220075AABD /* Utente.m */; };
 		C7C70A1F1914FC2C005C2917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C70A1E1914FC2C005C2917 /* Foundation.framework */; };
 		C7C70A211914FC2C005C2917 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C70A201914FC2C005C2917 /* CoreGraphics.framework */; };
 		C7C70A231914FC2C005C2917 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C70A221914FC2C005C2917 /* UIKit.framework */; };
@@ -50,6 +48,22 @@
 
 /* Begin PBXFileReference section */
 		52FA383E662D4434A7FF9474 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		AB14E556192657310011FAA2 /* Dato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dato.h; sourceTree = "<group>"; };
+		AB14E557192657310011FAA2 /* Dato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dato.m; sourceTree = "<group>"; };
+		AB14E558192657310011FAA2 /* Necessita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Necessita.h; sourceTree = "<group>"; };
+		AB14E559192657310011FAA2 /* Necessita.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Necessita.m; sourceTree = "<group>"; };
+		AB14E55A192657310011FAA2 /* Stanza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stanza.h; sourceTree = "<group>"; };
+		AB14E55B192657310011FAA2 /* Stanza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stanza.m; sourceTree = "<group>"; };
+		AB14E55C192657310011FAA2 /* Utente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utente.h; sourceTree = "<group>"; };
+		AB14E55D192657310011FAA2 /* Utente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utente.m; sourceTree = "<group>"; };
+		AB14E562192657900011FAA2 /* _Dato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Dato.h; sourceTree = "<group>"; };
+		AB14E563192657900011FAA2 /* _Dato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Dato.m; sourceTree = "<group>"; };
+		AB14E564192657900011FAA2 /* _Necessita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Necessita.h; sourceTree = "<group>"; };
+		AB14E565192657900011FAA2 /* _Necessita.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Necessita.m; sourceTree = "<group>"; };
+		AB14E566192657900011FAA2 /* _Stanza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Stanza.h; sourceTree = "<group>"; };
+		AB14E567192657900011FAA2 /* _Stanza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Stanza.m; sourceTree = "<group>"; };
+		AB14E568192657900011FAA2 /* _Utente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Utente.h; sourceTree = "<group>"; };
+		AB14E569192657900011FAA2 /* _Utente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Utente.m; sourceTree = "<group>"; };
 		AB284F96191E164E007E7B6A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		AB284F99191E1799007E7B6A /* BLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
 		AB284F9A191E1799007E7B6A /* BLE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
@@ -58,26 +72,6 @@
 		AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input_Sensor1_ViewController.m; sourceTree = "<group>"; };
 		AB2A3B761922766300703B4E /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		AB2A3B771922766300703B4E /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
-		C79A60E61918FC220075AABD /* _Dato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Dato.h; sourceTree = "<group>"; };
-		C79A60E71918FC220075AABD /* _Dato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Dato.m; sourceTree = "<group>"; };
-		C79A60E81918FC220075AABD /* _Necessita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Necessita.h; sourceTree = "<group>"; };
-		C79A60E91918FC220075AABD /* _Necessita.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Necessita.m; sourceTree = "<group>"; };
-		C79A60EA1918FC220075AABD /* _Piattaforma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Piattaforma.h; sourceTree = "<group>"; };
-		C79A60EB1918FC220075AABD /* _Piattaforma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Piattaforma.m; sourceTree = "<group>"; };
-		C79A60EC1918FC220075AABD /* _Stanza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Stanza.h; sourceTree = "<group>"; };
-		C79A60ED1918FC220075AABD /* _Stanza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Stanza.m; sourceTree = "<group>"; };
-		C79A60EE1918FC220075AABD /* _Utente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Utente.h; sourceTree = "<group>"; };
-		C79A60EF1918FC220075AABD /* _Utente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Utente.m; sourceTree = "<group>"; };
-		C79A60F01918FC220075AABD /* Dato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dato.h; path = Modelli/Dato.h; sourceTree = "<group>"; };
-		C79A60F11918FC220075AABD /* Dato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dato.m; path = Modelli/Dato.m; sourceTree = "<group>"; };
-		C79A60F21918FC220075AABD /* Necessita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Necessita.h; path = Modelli/Necessita.h; sourceTree = "<group>"; };
-		C79A60F31918FC220075AABD /* Necessita.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Necessita.m; path = Modelli/Necessita.m; sourceTree = "<group>"; };
-		C79A60F41918FC220075AABD /* Piattaforma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Piattaforma.h; path = Modelli/Piattaforma.h; sourceTree = "<group>"; };
-		C79A60F51918FC220075AABD /* Piattaforma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Piattaforma.m; path = Modelli/Piattaforma.m; sourceTree = "<group>"; };
-		C79A60F61918FC220075AABD /* Stanza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Stanza.h; path = Modelli/Stanza.h; sourceTree = "<group>"; };
-		C79A60F71918FC220075AABD /* Stanza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Stanza.m; path = Modelli/Stanza.m; sourceTree = "<group>"; };
-		C79A60F81918FC220075AABD /* Utente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utente.h; path = Modelli/Utente.h; sourceTree = "<group>"; };
-		C79A60F91918FC220075AABD /* Utente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utente.m; path = Modelli/Utente.m; sourceTree = "<group>"; };
 		C7C70A1B1914FC2C005C2917 /* coredata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coredata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C70A1E1914FC2C005C2917 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7C70A201914FC2C005C2917 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -140,16 +134,14 @@
 		C79A60E51918FC220075AABD /* file_macchina */ = {
 			isa = PBXGroup;
 			children = (
-				C79A60E61918FC220075AABD /* _Dato.h */,
-				C79A60E71918FC220075AABD /* _Dato.m */,
-				C79A60E81918FC220075AABD /* _Necessita.h */,
-				C79A60E91918FC220075AABD /* _Necessita.m */,
-				C79A60EA1918FC220075AABD /* _Piattaforma.h */,
-				C79A60EB1918FC220075AABD /* _Piattaforma.m */,
-				C79A60EC1918FC220075AABD /* _Stanza.h */,
-				C79A60ED1918FC220075AABD /* _Stanza.m */,
-				C79A60EE1918FC220075AABD /* _Utente.h */,
-				C79A60EF1918FC220075AABD /* _Utente.m */,
+				AB14E562192657900011FAA2 /* _Dato.h */,
+				AB14E563192657900011FAA2 /* _Dato.m */,
+				AB14E564192657900011FAA2 /* _Necessita.h */,
+				AB14E565192657900011FAA2 /* _Necessita.m */,
+				AB14E566192657900011FAA2 /* _Stanza.h */,
+				AB14E567192657900011FAA2 /* _Stanza.m */,
+				AB14E568192657900011FAA2 /* _Utente.h */,
+				AB14E569192657900011FAA2 /* _Utente.m */,
 			);
 			name = file_macchina;
 			path = Modelli;
@@ -199,16 +191,14 @@
 				AB2A3B771922766300703B4E /* StartViewController.m */,
 				AB284F9C191E1833007E7B6A /* Input_Sensor1_ViewController.h */,
 				AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */,
-				C79A60F01918FC220075AABD /* Dato.h */,
-				C79A60F11918FC220075AABD /* Dato.m */,
-				C79A60F21918FC220075AABD /* Necessita.h */,
-				C79A60F31918FC220075AABD /* Necessita.m */,
-				C79A60F41918FC220075AABD /* Piattaforma.h */,
-				C79A60F51918FC220075AABD /* Piattaforma.m */,
-				C79A60F61918FC220075AABD /* Stanza.h */,
-				C79A60F71918FC220075AABD /* Stanza.m */,
-				C79A60F81918FC220075AABD /* Utente.h */,
-				C79A60F91918FC220075AABD /* Utente.m */,
+				AB14E556192657310011FAA2 /* Dato.h */,
+				AB14E557192657310011FAA2 /* Dato.m */,
+				AB14E558192657310011FAA2 /* Necessita.h */,
+				AB14E559192657310011FAA2 /* Necessita.m */,
+				AB14E55A192657310011FAA2 /* Stanza.h */,
+				AB14E55B192657310011FAA2 /* Stanza.m */,
+				AB14E55C192657310011FAA2 /* Utente.h */,
+				AB14E55D192657310011FAA2 /* Utente.m */,
 				C79A60E51918FC220075AABD /* file_macchina */,
 				C7C70A321914FC2C005C2917 /* coredata.xcdatamodeld */,
 				C7C70A351914FC2C005C2917 /* Images.xcassets */,
@@ -376,21 +366,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C79A61021918FC220075AABD /* Stanza.m in Sources */,
-				C79A60FE1918FC220075AABD /* _Utente.m in Sources */,
-				C79A60FC1918FC220075AABD /* _Piattaforma.m in Sources */,
-				C79A60FD1918FC220075AABD /* _Stanza.m in Sources */,
+				AB14E560192657310011FAA2 /* Stanza.m in Sources */,
 				C7C70A311914FC2C005C2917 /* AppDelegate.m in Sources */,
-				C79A61011918FC220075AABD /* Piattaforma.m in Sources */,
-				C79A60FA1918FC220075AABD /* _Dato.m in Sources */,
+				AB14E55E192657310011FAA2 /* Dato.m in Sources */,
 				C7C70A2D1914FC2C005C2917 /* main.m in Sources */,
-				C79A61031918FC220075AABD /* Utente.m in Sources */,
+				AB14E56C192657900011FAA2 /* _Stanza.m in Sources */,
+				AB14E55F192657310011FAA2 /* Necessita.m in Sources */,
+				AB14E561192657310011FAA2 /* Utente.m in Sources */,
 				AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */,
-				C79A60FF1918FC220075AABD /* Dato.m in Sources */,
-				C79A60FB1918FC220075AABD /* _Necessita.m in Sources */,
+				AB14E56B192657900011FAA2 /* _Necessita.m in Sources */,
 				AB2A3B781922766300703B4E /* StartViewController.m in Sources */,
 				C7C70A341914FC2C005C2917 /* coredata.xcdatamodeld in Sources */,
-				C79A61001918FC220075AABD /* Necessita.m in Sources */,
+				AB14E56D192657900011FAA2 /* _Utente.m in Sources */,
+				AB14E56A192657900011FAA2 /* _Dato.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

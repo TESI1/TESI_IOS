@@ -31,7 +31,7 @@
         <relationship name="utenti_to_stanze" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="Stanze" inverseName="stanze_to_utenti" inverseEntity="Stanze" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Dati" positionX="-99" positionY="-604" width="128" height="163"/>
+        <element name="Dati" positionX="-351" positionY="-559" width="128" height="163"/>
         <element name="Necessita" positionX="-101" positionY="-378" width="128" height="103"/>
         <element name="Stanze" positionX="-603" positionY="-396" width="126" height="118"/>
         <element name="Utenti" positionX="-297" positionY="-298" width="128" height="118"/>

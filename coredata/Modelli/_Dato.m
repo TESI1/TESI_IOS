@@ -14,7 +14,7 @@ const struct DatoAttributes DatoAttributes = {
 };
 
 const struct DatoRelationships DatoRelationships = {
-	.dati_to_piattaforma = @"dati_to_piattaforma",
+	.dati_to_stanze = @"dati_to_stanze",
 };
 
 const struct DatoFetchedProperties DatoFetchedProperties = {
@@ -222,7 +222,7 @@ const struct DatoFetchedProperties DatoFetchedProperties = {
 
 
 
-@dynamic dati_to_piattaforma;
+@dynamic dati_to_stanze;
 
 	
 
