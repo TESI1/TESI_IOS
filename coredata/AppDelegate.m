@@ -21,9 +21,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    StartViewController *startViewController = [[StartViewController alloc]init];
+    Input_Sensor1_ViewController *input_Sensor1_ViewController = [[Input_Sensor1_ViewController alloc]init];
     
-    self.window.rootViewController = startViewController;
+    self.window.rootViewController = input_Sensor1_ViewController;
     
     [self.window makeKeyAndVisible];
     
