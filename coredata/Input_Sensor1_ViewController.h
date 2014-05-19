@@ -8,15 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Input_Sensor1_ViewController : UIViewController
+@interface Input_Sensor1_ViewController : UIViewController <BLEDelegate>
 {
-    IBOutlet UISwitch *swDigitalIn;
-    IBOutlet UISwitch *swDigitalOut;
-    IBOutlet UISwitch *swAnalogIn;
-    IBOutlet UILabel *lblAnalogIn;
-    IBOutlet UIActivityIndicatorView *indConnecting;
+    IBOutlet UILabel *lblTemp;
+    IBOutlet UILabel *lblHum;
+    IBOutlet UILabel *lblLight;
+    IBOutlet UILabel *lblSound;
+    
+    
     IBOutlet UILabel *lblRSSI;
     IBOutlet UIButton *btnDisConnect;
+    int *stanza;
+    int *sensore;
+    int *valore;
 }
 
 @property (strong, nonatomic) BLE *ble;

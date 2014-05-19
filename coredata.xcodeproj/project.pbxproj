@@ -128,7 +128,8 @@
 				AB284F9A191E1799007E7B6A /* BLE.m */,
 				AB284F9B191E1799007E7B6A /* BLEDefines.h */,
 			);
-			path = BLE;
+			name = BLE;
+			path = ../BLE;
 			sourceTree = "<group>";
 		};
 		C79A60E51918FC220075AABD /* file_macchina */ = {
@@ -170,7 +171,6 @@
 		C7C70A1D1914FC2C005C2917 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB284F98191E1799007E7B6A /* BLE */,
 				AB284F96191E164E007E7B6A /* CoreBluetooth.framework */,
 				C7C70A1E1914FC2C005C2917 /* Foundation.framework */,
 				C7C70A201914FC2C005C2917 /* CoreGraphics.framework */,
@@ -202,6 +202,7 @@
 				C79A60E51918FC220075AABD /* file_macchina */,
 				C7C70A321914FC2C005C2917 /* coredata.xcdatamodeld */,
 				C7C70A351914FC2C005C2917 /* Images.xcassets */,
+				AB284F98191E1799007E7B6A /* BLE */,
 				C7C70A271914FC2C005C2917 /* Supporting Files */,
 			);
 			path = coredata;
