@@ -15,7 +15,6 @@
     IBOutlet UILabel *lblLight;
     IBOutlet UILabel *lblSound;
     
-    
     IBOutlet UILabel *lblRSSI;
     IBOutlet UIButton *btnDisConnect;
     int *stanza;

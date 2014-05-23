@@ -29,9 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
-    
     
     lblTemp = [[UILabel alloc]initWithFrame:CGRectMake(50, 100, 130, 30)];
     lblTemp.text = @"-lblTemp-";
@@ -56,14 +56,14 @@
     CGRect rect = [[UIScreen mainScreen]applicationFrame];
     btnDisConnect = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [btnDisConnect setFrame:CGRectMake(rect.size.width/2-110, rect.size.height/2-55, 100, 50)];
-    [btnDisConnect setTitle:@"Disconnect" forState:UIControlStateNormal];
+    [btnDisConnect setTitle:@"" forState:UIControlStateNormal];
     [btnDisConnect addTarget:self action:@selector(Disconnect) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnDisConnect];
 }
 
 -(void)Disconnect
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"disconnessione");
 }
 
 
