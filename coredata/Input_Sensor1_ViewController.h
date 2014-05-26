@@ -14,12 +14,21 @@
     IBOutlet UILabel *lblHum;
     IBOutlet UILabel *lblLight;
     IBOutlet UILabel *lblSound;
-    
     IBOutlet UILabel *lblRSSI;
+    
     IBOutlet UIButton *btnDisConnect;
+    IBOutlet UIButton *btnhome;
+    IBOutlet UIButton *btnTempDetail;
+    
     int *stanza;
     int *sensore;
     int *valore;
+    
+    UIImage *HomeButton;
+    UIImage*TempDetail;
+    
+    UIImage *Gif;
+    UIImageView *GifImageView;
 }
 
 @property (strong, nonatomic) BLE *ble;

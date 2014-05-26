@@ -7,7 +7,7 @@
 //
 
 #import "Input_Sensor1_ViewController.h"
-#import "StartViewController.h"
+#import "TempDetailViewController.h"
 
 @interface Input_Sensor1_ViewController ()
 
@@ -33,6 +33,15 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor redColor];
     
+    TempDetail = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"round" ofType:@"png"]];
+    CGRect rect2 = [[UIScreen mainScreen]applicationFrame];
+    btnTempDetail = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btnTempDetail setFrame:CGRectMake(50, 100, 50, 50)];
+    [btnTempDetail setTitle:@"" forState:UIControlStateNormal];
+    [btnTempDetail setImage:TempDetail forState:UIControlStateNormal];
+    [btnTempDetail addTarget:self action:@selector(TempDetail) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnTempDetail];
+    
     lblTemp = [[UILabel alloc]initWithFrame:CGRectMake(50, 100, 130, 30)];
     lblTemp.text = @"-lblTemp-";
     [self.view addSubview:lblTemp];
@@ -53,12 +62,38 @@
     lblRSSI.text = @"-lblRSSI-";
     [self.view addSubview:lblRSSI];
     
+    HomeButton = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"Home" ofType:@"png"]];
+   
+    
     CGRect rect = [[UIScreen mainScreen]applicationFrame];
     btnDisConnect = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btnDisConnect setFrame:CGRectMake(rect.size.width/2-110, rect.size.height/2-55, 100, 50)];
-    [btnDisConnect setTitle:@"" forState:UIControlStateNormal];
+    [btnDisConnect setFrame:CGRectMake(rect.size.width/2-10, rect.size.height/2-55, 100, 50)];
+    [btnDisConnect setTitle:@"disconnessione" forState:UIControlStateNormal];
     [btnDisConnect addTarget:self action:@selector(Disconnect) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnDisConnect];
+    
+    CGRect rect1 = [[UIScreen mainScreen]applicationFrame];
+    btnhome = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btnhome setFrame:CGRectMake(350, 950, 61, 59)];
+    [btnhome setTitle:@"" forState:UIControlStateNormal];
+    [btnhome setImage:HomeButton forState:UIControlStateNormal];
+    [btnhome addTarget:self action:@selector(Home) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnhome];
+    
+//    Gif = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"large" ofType:@"gif"]];
+//    GifImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 439, 651)];
+//    [GifImageView setImage:Gif];
+//    GifImageView.contentMode = UIViewContentModeScaleAspectFill;
+//    GifImageView.layer.masksToBounds = YES;
+//    [self.view addSubview:GifImageView];
+    
+    
+    
+}
+
+-(void)Home
+{
+    NSLog(@"hooooooommmmmmeeeee");
 }
 
 -(void)Disconnect
@@ -66,25 +101,17 @@
     NSLog(@"disconnessione");
 }
 
-
-
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
- {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+-(void)TempDetail
+{
+    TempDetailViewController *tempDetailViewController = [[TempDetailViewController alloc]init];
+    [self presentViewController:tempDetailViewController animated:YES completion:nil];
+}
+
 
 @end
