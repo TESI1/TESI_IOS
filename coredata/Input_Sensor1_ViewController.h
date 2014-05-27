@@ -14,21 +14,33 @@
     IBOutlet UILabel *lblHum;
     IBOutlet UILabel *lblLight;
     IBOutlet UILabel *lblSound;
+    IBOutlet UILabel *lblAria;
     IBOutlet UILabel *lblRSSI;
     
     IBOutlet UIButton *btnDisConnect;
     IBOutlet UIButton *btnhome;
     IBOutlet UIButton *btnTempDetail;
+    IBOutlet UIButton *btnUmiDetail;
+    IBOutlet UIButton *btnAriaDetail;
+    IBOutlet UIButton *btnSoundDetail;
+    IBOutlet UIButton *btnLumDetail;
     
     int *stanza;
     int *sensore;
     int *valore;
     
     UIImage *HomeButton;
-    UIImage*TempDetail;
+    UIImage *TempDetail;
+    UIImage *UmiDetail;
+    UIImage *AriaDetail;
+    UIImage *SoundDetail;
+    UIImage *LumDetail;
     
     UIImage *Gif;
     UIImageView *GifImageView;
+    
+    IBOutlet UIImage *barra;
+    IBOutlet UIImageView *barraView;
 }
 
 @property (strong, nonatomic) BLE *ble;

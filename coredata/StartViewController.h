@@ -11,6 +11,19 @@
 @interface StartViewController : UIViewController
 {
     IBOutlet UIButton *btnConnect;
+    IBOutlet UIButton *btnCamera;
+    IBOutlet UIButton *btnCucina;
+    IBOutlet UIButton *btnSoggiorno;
+    IBOutlet UIButton *btnAggiungi;
+    
+    
+    IBOutlet UIImage *camera;
+    IBOutlet UIImage *cucina;
+    IBOutlet UIImage *soggiorno;
+    IBOutlet UIImage *aggiungi;
+    
+    IBOutlet UIImage *barra;
+    IBOutlet UIImageView *barraView;
 }
 
 @end

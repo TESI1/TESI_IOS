@@ -1,20 +1,18 @@
 //
-//  TempDetailViewController.m
+//  UmiditaViewController.m
 //  coredata
 //
-//  Created by Mattia Gadda on 26/05/14.
+//  Created by Mattia Gadda on 27/05/14.
 //  Copyright (c) 2014 Giorgia Cesari. All rights reserved.
 //
 
-#import "TempDetailViewController.h"
-#import "Input_Sensor1_ViewController.h"
+#import "UmiditaViewController.h"
 
-
-@interface TempDetailViewController ()
+@interface UmiditaViewController ()
 
 @end
 
-@implementation TempDetailViewController
+@implementation UmiditaViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
     self.view.backgroundColor = [UIColor colorWithRed:0.486 green:0.850 blue:0.901 alpha:1.0];
     
     CGRect rect = [[UIScreen mainScreen]applicationFrame];

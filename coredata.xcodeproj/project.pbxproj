@@ -21,9 +21,22 @@
 		AB2A3B781922766300703B4E /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A3B771922766300703B4E /* StartViewController.m */; };
 		AB5E08591933AB050083BC35 /* large.gif in Resources */ = {isa = PBXBuildFile; fileRef = AB5E08581933AB050083BC35 /* large.gif */; };
 		AB5E085B1933ADAA0083BC35 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5E085A1933ADAA0083BC35 /* GameKit.framework */; };
+		AB95C0F01934B65000654C16 /* aria.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EB1934B65000654C16 /* aria.png */; };
+		AB95C0F11934B65000654C16 /* luminosita.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EC1934B65000654C16 /* luminosita.png */; };
+		AB95C0F21934B65000654C16 /* rumore.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0ED1934B65000654C16 /* rumore.png */; };
+		AB95C0F31934B65000654C16 /* temperatura.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EE1934B65000654C16 /* temperatura.png */; };
+		AB95C0F41934B65000654C16 /* umidita.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EF1934B65000654C16 /* umidita.png */; };
 		ABB010541933AFBF00453A1E /* TempDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB010531933AFBF00453A1E /* TempDetailViewController.m */; };
-		ABB010581933B1F900453A1E /* round.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB010571933B1F900453A1E /* round.png */; };
+		ABCF578B1934D0C900BEAF9D /* UmiditaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCF578A1934D0C900BEAF9D /* UmiditaViewController.m */; };
+		ABCF578E1934D16A00BEAF9D /* LumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCF578D1934D16A00BEAF9D /* LumViewController.m */; };
+		ABCF57911934D1EB00BEAF9D /* AriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCF57901934D1EB00BEAF9D /* AriaViewController.m */; };
+		ABCF57941934D28D00BEAF9D /* SoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABCF57931934D28D00BEAF9D /* SoundViewController.m */; };
 		ABE87C0C1933A58A0033C412 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE87C0B1933A58A0033C412 /* Home.png */; };
+		ABFBF89F1934A0EE0087F01E /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = ABFBF89C1934A0EE0087F01E /* camera.png */; };
+		ABFBF8A01934A0EE0087F01E /* cucina.png in Resources */ = {isa = PBXBuildFile; fileRef = ABFBF89D1934A0EE0087F01E /* cucina.png */; };
+		ABFBF8A11934A0EE0087F01E /* soggiorno.png in Resources */ = {isa = PBXBuildFile; fileRef = ABFBF89E1934A0EE0087F01E /* soggiorno.png */; };
+		ABFBF8A31934A4B70087F01E /* aggiungi.png in Resources */ = {isa = PBXBuildFile; fileRef = ABFBF8A21934A4B70087F01E /* aggiungi.png */; };
+		ABFBF8A51934AB8E0087F01E /* barra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ABFBF8A41934AB8E0087F01E /* barra.jpg */; };
 		C7C70A1F1914FC2C005C2917 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C70A1E1914FC2C005C2917 /* Foundation.framework */; };
 		C7C70A211914FC2C005C2917 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C70A201914FC2C005C2917 /* CoreGraphics.framework */; };
 		C7C70A231914FC2C005C2917 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C70A221914FC2C005C2917 /* UIKit.framework */; };
@@ -79,10 +92,27 @@
 		AB2A3B771922766300703B4E /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		AB5E08581933AB050083BC35 /* large.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = large.gif; sourceTree = "<group>"; };
 		AB5E085A1933ADAA0083BC35 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		AB95C0EB1934B65000654C16 /* aria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aria.png; sourceTree = "<group>"; };
+		AB95C0EC1934B65000654C16 /* luminosita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luminosita.png; sourceTree = "<group>"; };
+		AB95C0ED1934B65000654C16 /* rumore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rumore.png; sourceTree = "<group>"; };
+		AB95C0EE1934B65000654C16 /* temperatura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = temperatura.png; sourceTree = "<group>"; };
+		AB95C0EF1934B65000654C16 /* umidita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = umidita.png; sourceTree = "<group>"; };
 		ABB010521933AFBF00453A1E /* TempDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempDetailViewController.h; sourceTree = "<group>"; };
 		ABB010531933AFBF00453A1E /* TempDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempDetailViewController.m; sourceTree = "<group>"; };
-		ABB010571933B1F900453A1E /* round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = round.png; sourceTree = "<group>"; };
+		ABCF57891934D0C900BEAF9D /* UmiditaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UmiditaViewController.h; sourceTree = "<group>"; };
+		ABCF578A1934D0C900BEAF9D /* UmiditaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UmiditaViewController.m; sourceTree = "<group>"; };
+		ABCF578C1934D16A00BEAF9D /* LumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LumViewController.h; sourceTree = "<group>"; };
+		ABCF578D1934D16A00BEAF9D /* LumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LumViewController.m; sourceTree = "<group>"; };
+		ABCF578F1934D1EB00BEAF9D /* AriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AriaViewController.h; sourceTree = "<group>"; };
+		ABCF57901934D1EB00BEAF9D /* AriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AriaViewController.m; sourceTree = "<group>"; };
+		ABCF57921934D28D00BEAF9D /* SoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundViewController.h; sourceTree = "<group>"; };
+		ABCF57931934D28D00BEAF9D /* SoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundViewController.m; sourceTree = "<group>"; };
 		ABE87C0B1933A58A0033C412 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		ABFBF89C1934A0EE0087F01E /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		ABFBF89D1934A0EE0087F01E /* cucina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cucina.png; sourceTree = "<group>"; };
+		ABFBF89E1934A0EE0087F01E /* soggiorno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soggiorno.png; sourceTree = "<group>"; };
+		ABFBF8A21934A4B70087F01E /* aggiungi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aggiungi.png; sourceTree = "<group>"; };
+		ABFBF8A41934AB8E0087F01E /* barra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = barra.jpg; sourceTree = "<group>"; };
 		C7C70A1B1914FC2C005C2917 /* coredata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coredata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C70A1E1914FC2C005C2917 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7C70A201914FC2C005C2917 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -206,6 +236,14 @@
 				AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */,
 				ABB010521933AFBF00453A1E /* TempDetailViewController.h */,
 				ABB010531933AFBF00453A1E /* TempDetailViewController.m */,
+				ABCF57891934D0C900BEAF9D /* UmiditaViewController.h */,
+				ABCF578A1934D0C900BEAF9D /* UmiditaViewController.m */,
+				ABCF578C1934D16A00BEAF9D /* LumViewController.h */,
+				ABCF578D1934D16A00BEAF9D /* LumViewController.m */,
+				ABCF578F1934D1EB00BEAF9D /* AriaViewController.h */,
+				ABCF57901934D1EB00BEAF9D /* AriaViewController.m */,
+				ABCF57921934D28D00BEAF9D /* SoundViewController.h */,
+				ABCF57931934D28D00BEAF9D /* SoundViewController.m */,
 				AB14E556192657310011FAA2 /* Dato.h */,
 				AB14E557192657310011FAA2 /* Dato.m */,
 				AB14E558192657310011FAA2 /* Necessita.h */,
@@ -226,7 +264,16 @@
 		C7C70A271914FC2C005C2917 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ABB010571933B1F900453A1E /* round.png */,
+				AB95C0EB1934B65000654C16 /* aria.png */,
+				AB95C0EC1934B65000654C16 /* luminosita.png */,
+				AB95C0ED1934B65000654C16 /* rumore.png */,
+				AB95C0EE1934B65000654C16 /* temperatura.png */,
+				AB95C0EF1934B65000654C16 /* umidita.png */,
+				ABFBF8A41934AB8E0087F01E /* barra.jpg */,
+				ABFBF8A21934A4B70087F01E /* aggiungi.png */,
+				ABFBF89C1934A0EE0087F01E /* camera.png */,
+				ABFBF89D1934A0EE0087F01E /* cucina.png */,
+				ABFBF89E1934A0EE0087F01E /* soggiorno.png */,
 				AB5E08581933AB050083BC35 /* large.gif */,
 				ABE87C0B1933A58A0033C412 /* Home.png */,
 				C7C70A281914FC2C005C2917 /* coredata-Info.plist */,
@@ -340,11 +387,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABFBF8A51934AB8E0087F01E /* barra.jpg in Resources */,
+				AB95C0F41934B65000654C16 /* umidita.png in Resources */,
+				AB95C0F21934B65000654C16 /* rumore.png in Resources */,
+				ABFBF8A01934A0EE0087F01E /* cucina.png in Resources */,
 				AB5E08591933AB050083BC35 /* large.gif in Resources */,
+				AB95C0F31934B65000654C16 /* temperatura.png in Resources */,
+				ABFBF8A31934A4B70087F01E /* aggiungi.png in Resources */,
 				ABE87C0C1933A58A0033C412 /* Home.png in Resources */,
-				ABB010581933B1F900453A1E /* round.png in Resources */,
 				C7C70A2B1914FC2C005C2917 /* InfoPlist.strings in Resources */,
+				AB95C0F11934B65000654C16 /* luminosita.png in Resources */,
+				ABFBF89F1934A0EE0087F01E /* camera.png in Resources */,
 				C7C70A361914FC2C005C2917 /* Images.xcassets in Resources */,
+				ABFBF8A11934A0EE0087F01E /* soggiorno.png in Resources */,
+				AB95C0F01934B65000654C16 /* aria.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,9 +459,13 @@
 				AB14E56C192657900011FAA2 /* _Stanza.m in Sources */,
 				AB14E55F192657310011FAA2 /* Necessita.m in Sources */,
 				AB14E561192657310011FAA2 /* Utente.m in Sources */,
+				ABCF57911934D1EB00BEAF9D /* AriaViewController.m in Sources */,
+				ABCF57941934D28D00BEAF9D /* SoundViewController.m in Sources */,
 				AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */,
 				AB14E56B192657900011FAA2 /* _Necessita.m in Sources */,
+				ABCF578B1934D0C900BEAF9D /* UmiditaViewController.m in Sources */,
 				ABB010541933AFBF00453A1E /* TempDetailViewController.m in Sources */,
+				ABCF578E1934D16A00BEAF9D /* LumViewController.m in Sources */,
 				AB2A3B781922766300703B4E /* StartViewController.m in Sources */,
 				C7C70A341914FC2C005C2917 /* coredata.xcdatamodeld in Sources */,
 				AB14E56D192657900011FAA2 /* _Utente.m in Sources */,
