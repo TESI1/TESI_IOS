@@ -11,6 +11,11 @@
 @interface TempDetailViewController : UIViewController
 {
     IBOutlet UIButton *back;
+    IBOutlet UIImage *tempDetail;
+    IBOutlet UIImageView *tempDetailView;
+    
+    IBOutlet UIImage *barra;
+    IBOutlet UIImageView *barraView;
 }
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		862D3664A0324C7EA9966EF5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49554E5BF0146699048A19C /* libPods.a */; };
+		AB032F2D1934E26E0066AAF4 /* AggiungiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB032F2C1934E26E0066AAF4 /* AggiungiViewController.m */; };
 		AB14E55E192657310011FAA2 /* Dato.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E557192657310011FAA2 /* Dato.m */; };
 		AB14E55F192657310011FAA2 /* Necessita.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E559192657310011FAA2 /* Necessita.m */; };
 		AB14E560192657310011FAA2 /* Stanza.m in Sources */ = {isa = PBXBuildFile; fileRef = AB14E55B192657310011FAA2 /* Stanza.m */; };
@@ -66,6 +67,8 @@
 
 /* Begin PBXFileReference section */
 		52FA383E662D4434A7FF9474 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		AB032F2B1934E26E0066AAF4 /* AggiungiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AggiungiViewController.h; sourceTree = "<group>"; };
+		AB032F2C1934E26E0066AAF4 /* AggiungiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AggiungiViewController.m; sourceTree = "<group>"; };
 		AB14E556192657310011FAA2 /* Dato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dato.h; sourceTree = "<group>"; };
 		AB14E557192657310011FAA2 /* Dato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dato.m; sourceTree = "<group>"; };
 		AB14E558192657310011FAA2 /* Necessita.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Necessita.h; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				ABCF57901934D1EB00BEAF9D /* AriaViewController.m */,
 				ABCF57921934D28D00BEAF9D /* SoundViewController.h */,
 				ABCF57931934D28D00BEAF9D /* SoundViewController.m */,
+				AB032F2B1934E26E0066AAF4 /* AggiungiViewController.h */,
+				AB032F2C1934E26E0066AAF4 /* AggiungiViewController.m */,
 				AB14E556192657310011FAA2 /* Dato.h */,
 				AB14E557192657310011FAA2 /* Dato.m */,
 				AB14E558192657310011FAA2 /* Necessita.h */,
@@ -457,6 +462,7 @@
 				AB14E55E192657310011FAA2 /* Dato.m in Sources */,
 				C7C70A2D1914FC2C005C2917 /* main.m in Sources */,
 				AB14E56C192657900011FAA2 /* _Stanza.m in Sources */,
+				AB032F2D1934E26E0066AAF4 /* AggiungiViewController.m in Sources */,
 				AB14E55F192657310011FAA2 /* Necessita.m in Sources */,
 				AB14E561192657310011FAA2 /* Utente.m in Sources */,
 				ABCF57911934D1EB00BEAF9D /* AriaViewController.m in Sources */,

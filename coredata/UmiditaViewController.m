@@ -31,7 +31,7 @@
     
     CGRect rect = [[UIScreen mainScreen]applicationFrame];
     back = [UIButton buttonWithType:UIButtonTypeCustom];
-    [back setFrame:CGRectMake(rect.size.width/2-10, rect.size.height/2-55, 100, 50)];
+    [back setFrame:CGRectMake(rect.size.width/2-10, rect.size.height/2+105, 100, 50)];
     [back setTitle:@"back" forState:UIControlStateNormal];
     [back addTarget:self action:@selector(Back) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:back];

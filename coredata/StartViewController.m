@@ -8,6 +8,7 @@
 
 #import "StartViewController.h"
 #import "Input_Sensor1_ViewController.h"
+#import "AggiungiViewController.h"
 
 @interface StartViewController ()
 
@@ -104,6 +105,9 @@
 -(void)Aggiungi
 {
     NSLog(@"aggiungi");
+    
+    AggiungiViewController *aggiungiViewController = [[AggiungiViewController alloc]init];
+    [self presentViewController:aggiungiViewController animated:YES completion:nil];
 }
 
 -(void)Connect

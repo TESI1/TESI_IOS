@@ -32,12 +32,25 @@
     
     self.view.backgroundColor = [UIColor colorWithRed:0.486 green:0.850 blue:0.901 alpha:1.0];
     
+    barra = [[UIImage alloc]initWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"barra" ofType:@"jpg"]];
+    barraView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 0, 100, 64)];
+    [barraView setImage:barra];
+    barraView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:barraView];
+    
     CGRect rect = [[UIScreen mainScreen]applicationFrame];
     back = [UIButton buttonWithType:UIButtonTypeCustom];
-    [back setFrame:CGRectMake(rect.size.width/2-10, rect.size.height/2-55, 100, 50)];
+    [back setFrame:CGRectMake(rect.size.width/2-10, rect.size.height/2+105, 100, 50)];
     [back setTitle:@"back" forState:UIControlStateNormal];
     [back addTarget:self action:@selector(Back) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:back];
+    
+    
+    tempDetail = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"temperatura" ofType:@"png"]];
+    tempDetailView = [[UIImageView alloc]initWithFrame:CGRectMake(80, 100, 150, 150)];
+    [tempDetailView setImage:tempDetail];
+    tempDetailView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:tempDetailView];
 }
 
 -(void)Back

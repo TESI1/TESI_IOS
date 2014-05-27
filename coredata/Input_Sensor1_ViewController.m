@@ -13,6 +13,7 @@
 #import "AriaViewController.h"
 #import "SoundViewController.h"
 
+
 @interface Input_Sensor1_ViewController ()
 
 @end
@@ -89,7 +90,7 @@
     [btnSoundDetail addTarget:self action:@selector(soundDetail) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnSoundDetail];
     
-    lblTemp = [[UILabel alloc]initWithFrame:CGRectMake(50, 100, 130, 30)];
+    lblTemp = [[UILabel alloc]initWithFrame:CGRectMake(35, 195, 130, 30)];
     lblTemp.text = @"-lblTemp-";
     [self.view addSubview:lblTemp];
     
@@ -101,11 +102,11 @@
     lblAria.text = @"-lblAria-";
     [self.view addSubview:lblAria];
     
-    lblLight = [[UILabel alloc]initWithFrame:CGRectMake(50, 250, 130, 30)];
+    lblLight = [[UILabel alloc]initWithFrame:CGRectMake(35, 320, 130, 30)];
     lblLight.text = @"-lblLight-";
     [self.view addSubview:lblLight];
     
-    lblSound = [[UILabel alloc]initWithFrame:CGRectMake(50, 400, 130, 30)];
+    lblSound = [[UILabel alloc]initWithFrame:CGRectMake(35, 455, 130, 30)];
     lblSound.text = @"-lblSound-";
     [self.view addSubview:lblSound];
     
