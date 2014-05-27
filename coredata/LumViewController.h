@@ -10,7 +10,13 @@
 
 @interface LumViewController : UIViewController
 {
+    
     IBOutlet UIButton *back;
+    IBOutlet UIImage *LumDetail;
+    IBOutlet UIImageView *LumDetailView;
+    
+    IBOutlet UIImage *barra;
+    IBOutlet UIImageView *barraView;
 }
 
 @end

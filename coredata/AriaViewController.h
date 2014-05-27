@@ -10,7 +10,13 @@
 
 @interface AriaViewController : UIViewController
 {
+    
     IBOutlet UIButton *back;
+    IBOutlet UIImage *AriaDetail;
+    IBOutlet UIImageView *AriaDetailView;
+    
+    IBOutlet UIImage *barra;
+    IBOutlet UIImageView *barraView;
 }
 
 @end

@@ -35,6 +35,18 @@
     [back setTitle:@"back" forState:UIControlStateNormal];
     [back addTarget:self action:@selector(Back) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:back];
+    
+    barra = [[UIImage alloc]initWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"barra" ofType:@"jpg"]];
+    barraView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 0, 100, 64)];
+    [barraView setImage:barra];
+    barraView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:barraView];
+    
+    LumDetail = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"luminosita" ofType:@"png"]];
+    LumDetailView = [[UIImageView alloc]initWithFrame:CGRectMake(80, 100, 150, 150)];
+    [LumDetailView setImage:LumDetail];
+    LumDetailView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:LumDetailView];
 }
 
 -(void)Back

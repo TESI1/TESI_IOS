@@ -11,5 +11,10 @@
 @interface SoundViewController : UIViewController
 {
     IBOutlet UIButton *back;
+    IBOutlet UIImage *SoundDetail;
+    IBOutlet UIImageView *SoundDetailView;
+    
+    IBOutlet UIImage *barra;
+    IBOutlet UIImageView *barraView;
 }
 @end

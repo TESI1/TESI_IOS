@@ -10,7 +10,6 @@
 
 @interface StartViewController : UIViewController
 {
-    IBOutlet UIButton *btnConnect;
     IBOutlet UIButton *btnCamera;
     IBOutlet UIButton *btnCucina;
     IBOutlet UIButton *btnSoggiorno;

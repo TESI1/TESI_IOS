@@ -35,6 +35,19 @@
     [back setTitle:@"back" forState:UIControlStateNormal];
     [back addTarget:self action:@selector(Back) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:back];
+    
+    
+    barra = [[UIImage alloc]initWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"barra" ofType:@"jpg"]];
+    barraView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 0, 100, 64)];
+    [barraView setImage:barra];
+    barraView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:barraView];
+
+    UmiDetail = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"umidita" ofType:@"png"]];
+    UmiDetailView = [[UIImageView alloc]initWithFrame:CGRectMake(80, 100, 150, 150)];
+    [UmiDetailView setImage:UmiDetail];
+    UmiDetailView.contentMode = UIViewContentModeScaleAspectFill;
+    [self.view addSubview:UmiDetailView];
 }
 
 -(void)Back

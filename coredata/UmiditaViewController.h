@@ -11,5 +11,10 @@
 @interface UmiditaViewController : UIViewController
 {
     IBOutlet UIButton *back;
+    IBOutlet UIImage *UmiDetail;
+    IBOutlet UIImageView *UmiDetailView;
+    
+    IBOutlet UIImage *barra;
+    IBOutlet UIImageView *barraView;
 }
 @end

@@ -43,13 +43,6 @@
     barraView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:barraView];
     
-    CGRect rect = [[UIScreen mainScreen]applicationFrame];
-    btnConnect = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btnConnect setFrame:CGRectMake(rect.size.width/2-110, rect.size.height/2-55, 250, 400)];
-    [btnConnect setTitle:@"Connect" forState:UIControlStateNormal];
-    [btnConnect addTarget:self action:@selector(Connect) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btnConnect];
-    
     CGRect rect1 = [[UIScreen mainScreen]applicationFrame];
     btnCamera = [UIButton buttonWithType:UIButtonTypeCustom];
     [btnCamera setFrame:CGRectMake(rect1.size.width/2-140, rect1.size.height/2-170, 101, 99)];

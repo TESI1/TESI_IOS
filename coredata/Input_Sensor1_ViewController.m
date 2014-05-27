@@ -94,15 +94,15 @@
     lblTemp.text = @"-lblTemp-";
     [self.view addSubview:lblTemp];
     
-    lblHum = [[UILabel alloc]initWithFrame:CGRectMake(200, 100, 130, 30)];
+    lblHum = [[UILabel alloc]initWithFrame:CGRectMake(200, 195, 130, 30)];
     lblHum.text = @"-lblHum-";
     [self.view addSubview:lblHum];
     
-    lblAria = [[UILabel alloc]initWithFrame:CGRectMake(200, 250, 130, 30)];
+    lblAria = [[UILabel alloc]initWithFrame:CGRectMake(200, 325, 130, 30)];
     lblAria.text = @"-lblAria-";
     [self.view addSubview:lblAria];
     
-    lblLight = [[UILabel alloc]initWithFrame:CGRectMake(35, 320, 130, 30)];
+    lblLight = [[UILabel alloc]initWithFrame:CGRectMake(35, 325, 130, 30)];
     lblLight.text = @"-lblLight-";
     [self.view addSubview:lblLight];
     
