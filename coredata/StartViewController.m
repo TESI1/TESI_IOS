@@ -30,6 +30,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.ble = [[BLE alloc]init];
+    [self.ble controlSetup];
+    self.ble.delegate = self;
+    
+    
     self.view.backgroundColor = [UIColor colorWithRed:0.872 green:0.876 blue:0.868 alpha:1.0];
     
     camera = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"camera" ofType:@"png"]];
@@ -76,6 +81,112 @@
     [self.view addSubview:btnAggiungi];
    
     
+    CGRect rect5 = [[UIScreen mainScreen]applicationFrame];
+    btnConnect = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [btnConnect setFrame:CGRectMake(rect5.size.width/2-210, rect5.size.height/2-55, 250, 400)];
+    [btnConnect setTitle:@"Connect" forState:UIControlStateNormal];
+    [btnConnect addTarget:self action:@selector(btnScanForPeripherals) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btnConnect];
+    
+}
+
+- (IBAction)btnScanForPeripherals
+{
+    NSLog(@"sono qua1");
+    
+    if (self.ble.activePeripheral) NSLog(@"ble.active");
+    if(self.ble.activePeripheral.state == CBPeripheralStateConnected)
+    {
+        NSLog(@"CbPeripheralstateconnect");
+        
+        [[self.ble CM] cancelPeripheralConnection:[self.ble activePeripheral]];
+        return;
+        
+        NSLog(@"dopo return");
+    }
+    
+    if (self.ble.peripherals)
+        self.ble.peripherals = nil;
+    
+    [self.ble findBLEPeripherals:2];
+    
+    NSLog(@"findPeripheral");
+    
+    [NSTimer scheduledTimerWithTimeInterval:(float)2.0 target:self selector:@selector(bleDidConnect) userInfo:nil repeats:NO];
+}
+
+-(void) bleDidConnect
+{
+    if (self.ble.peripherals.count > 0)
+    {
+        NSLog(@"connecting");
+        [self.ble connectPeripheral:[self.ble.peripherals objectAtIndex:0]];
+        
+        rssiTimer = [NSTimer scheduledTimerWithTimeInterval:(float)2.0 target:self selector:@selector(readRSSITimer) userInfo:nil repeats:NO];
+    }
+
+}
+
+-(void) readRSSITimer
+{
+    NSLog(@"self.ble.readRssi");
+    [self.ble readRSSI];
+}
+
+-(void) bleDidUpdateRSSI:(NSNumber *) rssi
+{
+    NSLog(@"readrssi");
+    //lblRSSI.text = rssi.stringValue;
+    NSLog(@"%@", rssi.stringValue);
+}
+
+NSTimer *rssiTimer;
+
+#pragma mark DATA
+-(void) bleDidReceiveData:(unsigned char *)data length:(int)length
+{
+    NSLog(@"Length: %d", length);
+    if (length == 3)
+    {
+        // parse data, all commands are in 3-byte
+        for (int i = 0; i < length; i+=3)
+        {
+            NSLog(@"Stanza 0x%02X, Sensore 0x%02X, Valore %d", data[i], data[i+1], data[i+2]);
+            
+            if (data[i] == 0x01)
+            {
+                if (data[i+1] == 0x0B)
+                {
+                    //lblUmiIN.text = [NSString stringWithFormat:@"Umi,%d", data[i+2]];
+                    NSLog(@"umidità, %d", data[2]);
+                    umi1 = [NSString stringWithFormat:@"%d", data[i+2]];
+                    NSLog(@"%@", umi1);
+                    
+                }
+                else if (data[i+1] == 0x0A)
+                {
+                    //lblTempIN.text = [NSString stringWithFormat:@"Temp,%d", data[i+2]];
+                     NSLog(@"Temp, %d", data[2]);
+                    temp1 = [NSString stringWithFormat:@"%d", data[i+2]];
+                    NSLog(@"%@", temp1);
+                }
+                else if (data[i+1] == 0x0C)
+                {
+                    //lblLuceIN.text = [NSString stringWithFormat:@"Luce,%d", data[i+2]];
+                     NSLog(@"Luce, %d", data[2]);
+                    luce1 = [NSString stringWithFormat:@"%d", data[i+2]];
+                    NSLog(@"%@", luce1);
+                }
+            }
+        }
+    }
+}
+
+- (void)bleDidDisconnect
+{
+    NSLog(@"->Disconnected");
+    
+    [rssiTimer invalidate];
 }
 
 -(void)Camera

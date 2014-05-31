@@ -9,12 +9,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StartViewController : UIViewController
+@interface StartViewController : UIViewController <BLEDelegate>
 {
     IBOutlet UIButton *btnCamera;
     IBOutlet UIButton *btnCucina;
     IBOutlet UIButton *btnSoggiorno;
     IBOutlet UIButton *btnAggiungi;
+    IBOutlet UIButton *btnConnect;
     
     
     IBOutlet UIImage *camera;
@@ -24,6 +25,11 @@
     
     IBOutlet UIImage *barra;
     IBOutlet UIImageView *barraView;
+    
+    NSTimer *rssiTimer;
+    NSTimer *rssiTimer2;
 }
+
+@property (strong, nonatomic) BLE *ble;
 
 @end

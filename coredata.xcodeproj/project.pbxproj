@@ -21,7 +21,7 @@
 		AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */; };
 		AB2A3B781922766300703B4E /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A3B771922766300703B4E /* StartViewController.m */; };
 		AB5E08591933AB050083BC35 /* large.gif in Resources */ = {isa = PBXBuildFile; fileRef = AB5E08581933AB050083BC35 /* large.gif */; };
-		AB5E085B1933ADAA0083BC35 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5E085A1933ADAA0083BC35 /* GameKit.framework */; };
+		AB64AF8F193A31DA00A604DB /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64AF8D193A31DA00A604DB /* BLE.m */; };
 		AB95C0F01934B65000654C16 /* aria.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EB1934B65000654C16 /* aria.png */; };
 		AB95C0F11934B65000654C16 /* luminosita.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EC1934B65000654C16 /* luminosita.png */; };
 		AB95C0F21934B65000654C16 /* rumore.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0ED1934B65000654C16 /* rumore.png */; };
@@ -86,15 +86,14 @@
 		AB14E568192657900011FAA2 /* _Utente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _Utente.h; sourceTree = "<group>"; };
 		AB14E569192657900011FAA2 /* _Utente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _Utente.m; sourceTree = "<group>"; };
 		AB284F96191E164E007E7B6A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		AB284F99191E1799007E7B6A /* BLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
-		AB284F9A191E1799007E7B6A /* BLE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
-		AB284F9B191E1799007E7B6A /* BLEDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		AB284F9C191E1833007E7B6A /* Input_Sensor1_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Input_Sensor1_ViewController.h; sourceTree = "<group>"; };
 		AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input_Sensor1_ViewController.m; sourceTree = "<group>"; };
 		AB2A3B761922766300703B4E /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		AB2A3B771922766300703B4E /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		AB5E08581933AB050083BC35 /* large.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = large.gif; sourceTree = "<group>"; };
-		AB5E085A1933ADAA0083BC35 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		AB64AF8C193A31DA00A604DB /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		AB64AF8D193A31DA00A604DB /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		AB64AF8E193A31DA00A604DB /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		AB95C0EB1934B65000654C16 /* aria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aria.png; sourceTree = "<group>"; };
 		AB95C0EC1934B65000654C16 /* luminosita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luminosita.png; sourceTree = "<group>"; };
 		AB95C0ED1934B65000654C16 /* rumore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rumore.png; sourceTree = "<group>"; };
@@ -144,7 +143,6 @@
 			files = (
 				AB284F97191E164E007E7B6A /* CoreBluetooth.framework in Frameworks */,
 				C7C70A211914FC2C005C2917 /* CoreGraphics.framework in Frameworks */,
-				AB5E085B1933ADAA0083BC35 /* GameKit.framework in Frameworks */,
 				C7C70A251914FC2C005C2917 /* CoreData.framework in Frameworks */,
 				C7C70A231914FC2C005C2917 /* UIKit.framework in Frameworks */,
 				C7C70A1F1914FC2C005C2917 /* Foundation.framework in Frameworks */,
@@ -166,15 +164,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB284F98191E1799007E7B6A /* BLE */ = {
+		AB64AF8B193A31DA00A604DB /* BLE */ = {
 			isa = PBXGroup;
 			children = (
-				AB284F99191E1799007E7B6A /* BLE.h */,
-				AB284F9A191E1799007E7B6A /* BLE.m */,
-				AB284F9B191E1799007E7B6A /* BLEDefines.h */,
+				AB64AF8C193A31DA00A604DB /* BLE.h */,
+				AB64AF8D193A31DA00A604DB /* BLE.m */,
+				AB64AF8E193A31DA00A604DB /* BLEDefines.h */,
 			);
-			name = BLE;
-			path = ../BLE;
+			path = BLE;
 			sourceTree = "<group>";
 		};
 		C79A60E51918FC220075AABD /* file_macchina */ = {
@@ -216,7 +213,6 @@
 		C7C70A1D1914FC2C005C2917 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AB5E085A1933ADAA0083BC35 /* GameKit.framework */,
 				AB284F96191E164E007E7B6A /* CoreBluetooth.framework */,
 				C7C70A1E1914FC2C005C2917 /* Foundation.framework */,
 				C7C70A201914FC2C005C2917 /* CoreGraphics.framework */,
@@ -260,7 +256,7 @@
 				C79A60E51918FC220075AABD /* file_macchina */,
 				C7C70A321914FC2C005C2917 /* coredata.xcdatamodeld */,
 				C7C70A351914FC2C005C2917 /* Images.xcassets */,
-				AB284F98191E1799007E7B6A /* BLE */,
+				AB64AF8B193A31DA00A604DB /* BLE */,
 				C7C70A271914FC2C005C2917 /* Supporting Files */,
 			);
 			path = coredata;
@@ -359,8 +355,11 @@
 					C7C70A1A1914FC2B005C2917 = {
 						DevelopmentTeam = 22UHK6CF36;
 						SystemCapabilities = {
-							com.apple.GameCenter = {
+							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.GameCenter = {
+								enabled = 0;
 							};
 						};
 					};
@@ -460,6 +459,7 @@
 				AB14E560192657310011FAA2 /* Stanza.m in Sources */,
 				C7C70A311914FC2C005C2917 /* AppDelegate.m in Sources */,
 				AB14E55E192657310011FAA2 /* Dato.m in Sources */,
+				AB64AF8F193A31DA00A604DB /* BLE.m in Sources */,
 				C7C70A2D1914FC2C005C2917 /* main.m in Sources */,
 				AB14E56C192657900011FAA2 /* _Stanza.m in Sources */,
 				AB032F2D1934E26E0066AAF4 /* AggiungiViewController.m in Sources */,

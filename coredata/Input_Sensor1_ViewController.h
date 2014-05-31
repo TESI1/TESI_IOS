@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Input_Sensor1_ViewController : UIViewController <BLEDelegate>
+@interface Input_Sensor1_ViewController : UIViewController
 {
     IBOutlet UILabel *lblTemp;
     IBOutlet UILabel *lblHum;
@@ -41,8 +41,10 @@
     
     IBOutlet UIImage *barra;
     IBOutlet UIImageView *barraView;
+    
+    NSTimer *timerlbl;
 }
 
-@property (strong, nonatomic) BLE *ble;
+
 
 @end
