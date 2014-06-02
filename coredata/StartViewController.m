@@ -193,6 +193,7 @@ NSTimer *rssiTimer;
 {
     NSLog(@"camera");
     Input_Sensor1_ViewController *input_Sensor1_ViewController = [[Input_Sensor1_ViewController alloc]init];
+    input_Sensor1_ViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:input_Sensor1_ViewController animated:YES completion:nil];
 }
 
@@ -211,7 +212,9 @@ NSTimer *rssiTimer;
     NSLog(@"aggiungi");
     
     AggiungiViewController *aggiungiViewController = [[AggiungiViewController alloc]init];
-    [self presentViewController:aggiungiViewController animated:YES completion:nil];
+    aggiungiViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:aggiungiViewController animated:NO completion:nil];
+    
 }
 
 -(void)Connect

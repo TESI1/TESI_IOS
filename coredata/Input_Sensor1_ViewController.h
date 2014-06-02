@@ -18,7 +18,6 @@
     IBOutlet UILabel *lblRSSI;
     
     IBOutlet UIButton *btnDisConnect;
-    IBOutlet UIButton *btnhome;
     IBOutlet UIButton *btnTempDetail;
     IBOutlet UIButton *btnUmiDetail;
     IBOutlet UIButton *btnAriaDetail;

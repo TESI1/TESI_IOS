@@ -91,23 +91,12 @@
     [btnSoundDetail addTarget:self action:@selector(soundDetail) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnSoundDetail];
     
-    HomeButton = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"Home" ofType:@"png"]];
-    
-    
     CGRect rect = [[UIScreen mainScreen]applicationFrame];
     btnDisConnect = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [btnDisConnect setFrame:CGRectMake(rect.size.width/2-10, rect.size.height/2+100, 100, 50)];
     [btnDisConnect setTitle:@"disconnessione" forState:UIControlStateNormal];
     [btnDisConnect addTarget:self action:@selector(Disconnect) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnDisConnect];
-    
-    CGRect rect1 = [[UIScreen mainScreen]applicationFrame];
-    btnhome = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btnhome setFrame:CGRectMake(rect1.size.width/2, rect1.size.height/2+450, 61, 59)];
-    [btnhome setTitle:@"" forState:UIControlStateNormal];
-    [btnhome setImage:HomeButton forState:UIControlStateNormal];
-    [btnhome addTarget:self action:@selector(Home) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btnhome];
     
     //    Gif = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"large" ofType:@"gif"]];
     //    GifImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 439, 651)];
@@ -128,6 +117,7 @@
     }
     else if (temp1 != NULL)
     {
+        lblTemp.text = @"";
         lblTemp.text = [NSString stringWithFormat:@"%@", temp1];
     }
     [self.view addSubview:lblTemp];
@@ -170,11 +160,6 @@
     [self.view addSubview:lblRSSI];
 }
 
--(void)Home
-{
-    NSLog(@"hooooooommmmmmeeeee");
-}
-
 -(void)Disconnect
 {
     NSLog(@"disconnessione");
@@ -190,6 +175,7 @@
 -(void)TempDetail
 {
     TempDetailViewController *tempDetailViewController = [[TempDetailViewController alloc]init];
+    tempDetailViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     [self presentViewController:tempDetailViewController animated:YES completion:nil];
 }
 
@@ -197,6 +183,7 @@
 {
     NSLog(@"umdità detail");
     UmiditaViewController *umiditaViewController = [[UmiditaViewController alloc]init];
+    umiditaViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     [self presentViewController:umiditaViewController animated:YES completion:nil];
 }
 
@@ -204,6 +191,7 @@
 {
     NSLog(@"lumDetail");
     LumViewController *lumViewController = [[LumViewController alloc]init];
+    lumViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     [self presentViewController:lumViewController animated:YES completion:nil];
 }
 
@@ -211,6 +199,7 @@
 {
     NSLog(@"aria detail");
     AriaViewController *ariaViewController = [[AriaViewController alloc]init];
+    ariaViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     [self presentViewController:ariaViewController animated:YES completion:nil];
 }
 
@@ -218,6 +207,7 @@
 {
     NSLog(@"soundDetail");
     SoundViewController *soundViewController = [[SoundViewController alloc]init];
+    soundViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     [self presentViewController:soundViewController animated:YES completion:nil];
 }
 
