@@ -126,7 +126,7 @@
     
     if (umi1 == NULL)
     {
-        [lblHum setText:@""];
+        lblHum.text = @"";
         lblHum.text = @"--";
     }
     else if (umi1 != NULL)

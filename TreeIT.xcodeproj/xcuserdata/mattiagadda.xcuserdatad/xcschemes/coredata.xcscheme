@@ -17,7 +17,7 @@
                BlueprintIdentifier = "C7C70A1A1914FC2B005C2917"
                BuildableName = "coredata.app"
                BlueprintName = "coredata"
-               ReferencedContainer = "container:coredata.xcodeproj">
+               ReferencedContainer = "container:TreeIT.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "C7C70A3A1914FC2C005C2917"
                BuildableName = "coredataTests.xctest"
                BlueprintName = "coredataTests"
-               ReferencedContainer = "container:coredata.xcodeproj">
+               ReferencedContainer = "container:TreeIT.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "C7C70A1A1914FC2B005C2917"
             BuildableName = "coredata.app"
             BlueprintName = "coredata"
-            ReferencedContainer = "container:coredata.xcodeproj">
+            ReferencedContainer = "container:TreeIT.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "C7C70A1A1914FC2B005C2917"
             BuildableName = "coredata.app"
             BlueprintName = "coredata"
-            ReferencedContainer = "container:coredata.xcodeproj">
+            ReferencedContainer = "container:TreeIT.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -82,7 +82,7 @@
             BlueprintIdentifier = "C7C70A1A1914FC2B005C2917"
             BuildableName = "coredata.app"
             BlueprintName = "coredata"
-            ReferencedContainer = "container:coredata.xcodeproj">
+            ReferencedContainer = "container:TreeIT.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

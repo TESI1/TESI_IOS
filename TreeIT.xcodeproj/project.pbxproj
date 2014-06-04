@@ -20,7 +20,6 @@
 		AB284F97191E164E007E7B6A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB284F96191E164E007E7B6A /* CoreBluetooth.framework */; };
 		AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */; };
 		AB2A3B781922766300703B4E /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A3B771922766300703B4E /* StartViewController.m */; };
-		AB5E08591933AB050083BC35 /* large.gif in Resources */ = {isa = PBXBuildFile; fileRef = AB5E08581933AB050083BC35 /* large.gif */; };
 		AB64AF8F193A31DA00A604DB /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64AF8D193A31DA00A604DB /* BLE.m */; };
 		AB95C0F01934B65000654C16 /* aria.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EB1934B65000654C16 /* aria.png */; };
 		AB95C0F11934B65000654C16 /* luminosita.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EC1934B65000654C16 /* luminosita.png */; };
@@ -90,7 +89,6 @@
 		AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input_Sensor1_ViewController.m; sourceTree = "<group>"; };
 		AB2A3B761922766300703B4E /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		AB2A3B771922766300703B4E /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
-		AB5E08581933AB050083BC35 /* large.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = large.gif; sourceTree = "<group>"; };
 		AB64AF8C193A31DA00A604DB /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
 		AB64AF8D193A31DA00A604DB /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		AB64AF8E193A31DA00A604DB /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
@@ -275,7 +273,6 @@
 				ABFBF89C1934A0EE0087F01E /* camera.png */,
 				ABFBF89D1934A0EE0087F01E /* cucina.png */,
 				ABFBF89E1934A0EE0087F01E /* soggiorno.png */,
-				AB5E08581933AB050083BC35 /* large.gif */,
 				ABE87C0B1933A58A0033C412 /* Home.png */,
 				C7C70A281914FC2C005C2917 /* coredata-Info.plist */,
 				C7C70A291914FC2C005C2917 /* InfoPlist.strings */,
@@ -350,7 +347,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Giorgia Cesari";
+				ORGANIZATIONNAME = MattiaGadda;
 				TargetAttributes = {
 					C7C70A1A1914FC2B005C2917 = {
 						DevelopmentTeam = 22UHK6CF36;
@@ -368,7 +365,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C7C70A161914FC2B005C2917 /* Build configuration list for PBXProject "coredata" */;
+			buildConfigurationList = C7C70A161914FC2B005C2917 /* Build configuration list for PBXProject "TreeIT" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -395,7 +392,6 @@
 				AB95C0F41934B65000654C16 /* umidita.png in Resources */,
 				AB95C0F21934B65000654C16 /* rumore.png in Resources */,
 				ABFBF8A01934A0EE0087F01E /* cucina.png in Resources */,
-				AB5E08591933AB050083BC35 /* large.gif in Resources */,
 				AB95C0F31934B65000654C16 /* temperatura.png in Resources */,
 				ABFBF8A31934A4B70087F01E /* aggiungi.png in Resources */,
 				ABE87C0C1933A58A0033C412 /* Home.png in Resources */,
@@ -668,7 +664,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C7C70A161914FC2B005C2917 /* Build configuration list for PBXProject "coredata" */ = {
+		C7C70A161914FC2B005C2917 /* Build configuration list for PBXProject "TreeIT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C7C70A4B1914FC2C005C2917 /* Debug */,
