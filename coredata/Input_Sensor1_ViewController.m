@@ -117,7 +117,7 @@
     }
     else if (temp1 != NULL)
     {
-        lblTemp.text = @"";
+        lblTemp.text = @"  ";
         lblTemp.text = [NSString stringWithFormat:@"%@", temp1];
     }
     [self.view addSubview:lblTemp];
@@ -126,7 +126,7 @@
     
     if (umi1 == NULL)
     {
-        lblHum.text = @"";
+        lblHum.text = @"  ";
         lblHum.text = @"--";
     }
     else if (umi1 != NULL)
@@ -158,6 +158,8 @@
     lblRSSI = [[UILabel alloc]initWithFrame:CGRectMake(350, 50, 130, 30)];
     lblRSSI.text = @"-lblRSSI-";
     [self.view addSubview:lblRSSI];
+    
+    
 }
 
 -(void)Disconnect
