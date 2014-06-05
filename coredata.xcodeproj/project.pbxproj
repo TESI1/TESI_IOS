@@ -21,6 +21,7 @@
 		AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */; };
 		AB2A3B781922766300703B4E /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A3B771922766300703B4E /* StartViewController.m */; };
 		AB64AF8F193A31DA00A604DB /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64AF8D193A31DA00A604DB /* BLE.m */; };
+		AB8C84891940E009007D6240 /* ach.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8C84881940E009007D6240 /* ach.png */; };
 		AB95C0F01934B65000654C16 /* aria.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EB1934B65000654C16 /* aria.png */; };
 		AB95C0F11934B65000654C16 /* luminosita.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EC1934B65000654C16 /* luminosita.png */; };
 		AB95C0F21934B65000654C16 /* rumore.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0ED1934B65000654C16 /* rumore.png */; };
@@ -92,6 +93,7 @@
 		AB64AF8C193A31DA00A604DB /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
 		AB64AF8D193A31DA00A604DB /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		AB64AF8E193A31DA00A604DB /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		AB8C84881940E009007D6240 /* ach.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ach.png; sourceTree = "<group>"; };
 		AB95C0EB1934B65000654C16 /* aria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aria.png; sourceTree = "<group>"; };
 		AB95C0EC1934B65000654C16 /* luminosita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = luminosita.png; sourceTree = "<group>"; };
 		AB95C0ED1934B65000654C16 /* rumore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rumore.png; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		C7C70A271914FC2C005C2917 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB8C84881940E009007D6240 /* ach.png */,
 				AB95C0EB1934B65000654C16 /* aria.png */,
 				AB95C0EC1934B65000654C16 /* luminosita.png */,
 				AB95C0ED1934B65000654C16 /* rumore.png */,
@@ -358,6 +361,9 @@
 							com.apple.GameCenter = {
 								enabled = 0;
 							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
 						};
 					};
 					C7C70A3A1914FC2C005C2917 = {
@@ -396,6 +402,7 @@
 				ABFBF8A31934A4B70087F01E /* aggiungi.png in Resources */,
 				ABE87C0C1933A58A0033C412 /* Home.png in Resources */,
 				C7C70A2B1914FC2C005C2917 /* InfoPlist.strings in Resources */,
+				AB8C84891940E009007D6240 /* ach.png in Resources */,
 				AB95C0F11934B65000654C16 /* luminosita.png in Resources */,
 				ABFBF89F1934A0EE0087F01E /* camera.png in Resources */,
 				C7C70A361914FC2C005C2917 /* Images.xcassets in Resources */,
@@ -591,8 +598,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mattia Gadda (M4Q68M883Z)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mattia Gadda (M4Q68M883Z)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "coredata/coredata-Prefix.pch";
 				INFOPLIST_FILE = "coredata/coredata-Info.plist";
@@ -609,8 +616,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mattia Gadda (M4Q68M883Z)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mattia Gadda (M4Q68M883Z)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "coredata/coredata-Prefix.pch";
 				INFOPLIST_FILE = "coredata/coredata-Info.plist";

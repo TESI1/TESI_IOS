@@ -41,12 +41,22 @@
     cucina = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"cucina" ofType:@"png"]];
     soggiorno = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"soggiorno" ofType:@"png"]];
     aggiungi = [[UIImage alloc]initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"aggiungi" ofType:@"png"]];
+    ach = [[UIImage alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"ach" ofType:@"png"]];
     
     barra = [[UIImage alloc]initWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"barra" ofType:@"jpg"]];
     barraView = [[UIImageView alloc]initWithFrame:CGRectMake(100, 0, 100, 64)];
     [barraView setImage:barra];
     barraView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:barraView];
+    
+    CGRect rect6 = [[UIScreen mainScreen]applicationFrame];
+    btnAch = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btnAch setFrame:CGRectMake(rect6.size.width/2+65, rect6.size.height/2-300, 101, 99)];
+    [btnAch setTitle:@"" forState:UIControlStateNormal];
+    [btnAch setImage:ach forState:UIControlStateNormal];
+    [btnAch addTarget:self action:@selector(Camera) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview: btnAch];
+    
     
     CGRect rect1 = [[UIScreen mainScreen]applicationFrame];
     btnCamera = [UIButton buttonWithType:UIButtonTypeCustom];

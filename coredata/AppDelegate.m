@@ -19,16 +19,37 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+     if ([[NSUserDefaults standardUserDefaults] integerForKey:@"secondaApert"])
+    {
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        
+        StartViewController *startViewController = [[StartViewController alloc]init];
+        
+        self.window.rootViewController = startViewController;
+    }
     
-    StartViewController *startViewController = [[StartViewController alloc]init];
+     else
+     {
+         self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+         
+         Input_Sensor1_ViewController *input_Sensor1_ViewController = [[Input_Sensor1_ViewController alloc]init];
+         
+         self.window.rootViewController = input_Sensor1_ViewController;
+         
+         [[NSUserDefaults standardUserDefaults]setInteger:1 forKey:@"secondaApert"];
+         [[NSUserDefaults standardUserDefaults] synchronize];
+         
+     }
+
     
-    self.window.rootViewController = startViewController;
+    
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
+    
     
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
@@ -56,6 +77,8 @@
 {
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)saveContext
@@ -152,5 +175,4 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
-
 @end

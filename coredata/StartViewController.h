@@ -16,12 +16,14 @@
     IBOutlet UIButton *btnSoggiorno;
     IBOutlet UIButton *btnAggiungi;
     IBOutlet UIButton *btnConnect;
-    
+    IBOutlet UIButton *btnAch;
     
     IBOutlet UIImage *camera;
     IBOutlet UIImage *cucina;
     IBOutlet UIImage *soggiorno;
     IBOutlet UIImage *aggiungi;
+    IBOutlet UIImage *ach;
+    
     
     IBOutlet UIImage *barra;
     IBOutlet UIImageView *barraView;

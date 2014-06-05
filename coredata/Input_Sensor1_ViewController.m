@@ -108,8 +108,20 @@
     timerlbl = [NSTimer scheduledTimerWithTimeInterval:(float)2.0 target:self selector:@selector(label) userInfo:nil repeats:YES];
 }
 
+
+
 -(void)label
 {
+    NSString *tempMax;
+    tempMax = @"23";
+    temp1 =@"45";
+    
+    if (temp1 > tempMax )
+    {
+        NSLog(@"oooooook, %@", tempMax);
+        
+    }
+    
     lblTemp = [[UITextField alloc] initWithFrame:CGRectMake(35, 195, 130, 30)];
     lblTemp.enabled = FALSE;
     
@@ -228,5 +240,4 @@
     soundViewController.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     [self presentViewController:soundViewController animated:YES completion:nil];
 }
-
 @end
