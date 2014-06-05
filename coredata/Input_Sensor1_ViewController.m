@@ -110,7 +110,23 @@
 
 -(void)label
 {
-    lblTemp = [[UILabel alloc]initWithFrame:CGRectMake(35, 195, 130, 30)];
+    lblTemp = [[UITextField alloc] initWithFrame:CGRectMake(35, 195, 130, 30)];
+    lblTemp.enabled = FALSE;
+    
+    if (temp1 == NULL)
+    {
+        [lblTemp setText:@"--"];
+    }
+    else if (temp1 != NULL)
+    {
+        [lblTemp setText:nil];
+        NSLog(@"vuoto, %@",lblTemp);
+        [lblTemp setText:temp1];
+        NSLog(@"pieno, %@",lblTemp);
+    }
+    [self.view addSubview:lblTemp];
+    
+    /*lblTemp = [[UILabel alloc]initWithFrame:CGRectMake(35, 195, 130, 30)];
     if (temp1 == NULL)
     {
         lblTemp.text = @"--";
@@ -120,7 +136,7 @@
         lblTemp.text = @"  ";
         lblTemp.text = [NSString stringWithFormat:@"%@", temp1];
     }
-    [self.view addSubview:lblTemp];
+    [self.view addSubview:lblTemp]; */
     
     lblHum = [[UILabel alloc]initWithFrame:CGRectMake(200, 195, 130, 30)];
     

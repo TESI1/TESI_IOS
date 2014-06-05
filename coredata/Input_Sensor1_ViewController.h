@@ -10,7 +10,7 @@
 
 @interface Input_Sensor1_ViewController : UIViewController
 {
-    IBOutlet UILabel *lblTemp;
+    IBOutlet UITextField *lblTemp;
     IBOutlet UILabel *lblHum;
     IBOutlet UILabel *lblLight;
     IBOutlet UILabel *lblSound;
