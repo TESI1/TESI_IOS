@@ -148,7 +148,7 @@
     if (temp1 > tempMax )
     {
         NSLog(@"temperatura elevata, %@", tempMax);
-        [self setupLocalNotifications];
+        //[self setupLocalNotifications];
     }
     
     if (temp1 == NULL)
