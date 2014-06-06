@@ -15,7 +15,6 @@
     IBOutlet UIButton *btnCucina;
     IBOutlet UIButton *btnSoggiorno;
     IBOutlet UIButton *btnAggiungi;
-    IBOutlet UIButton *btnConnect;
     IBOutlet UIButton *btnAch;
     
     IBOutlet UIImage *camera;

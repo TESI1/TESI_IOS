@@ -90,14 +90,6 @@
     [btnAggiungi setImage:aggiungi forState:UIControlStateNormal];
     [btnAggiungi addTarget:self action:@selector(Aggiungi) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btnAggiungi];
-   
-    
-    CGRect rect5 = [[UIScreen mainScreen]applicationFrame];
-    btnConnect = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [btnConnect setFrame:CGRectMake(rect5.size.width/2-210, rect5.size.height/2-55, 250, 400)];
-    [btnConnect setTitle:@"Connect" forState:UIControlStateNormal];
-    [btnConnect addTarget:self action:@selector(btnScanForPeripherals) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btnConnect];
     
 }
 
@@ -197,13 +189,6 @@ NSTimer *rssiTimer;
             }
         }
     }
-}
-
-- (void)bleDidDisconnect
-{
-    NSLog(@"->Disconnected");
-    
-    [rssiTimer invalidate];
 }
 
 -(void)Camera
