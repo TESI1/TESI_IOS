@@ -9,6 +9,7 @@
 #import "StartViewController.h"
 #import "Input_Sensor1_ViewController.h"
 #import "AggiungiViewController.h"
+#import "AchievementsViewController.h"
 
 @interface StartViewController ()
 
@@ -54,7 +55,7 @@
     [btnAch setFrame:CGRectMake(rect6.size.width/2+65, rect6.size.height/2-300, 101, 99)];
     [btnAch setTitle:@"" forState:UIControlStateNormal];
     [btnAch setImage:ach forState:UIControlStateNormal];
-    [btnAch addTarget:self action:@selector(Camera) forControlEvents:UIControlEventTouchUpInside];
+    [btnAch addTarget:self action:@selector(achievements) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview: btnAch];
     
     
@@ -187,6 +188,12 @@ NSTimer *rssiTimer;
                     luce1 = [NSString stringWithFormat:@"%d", data[i+2]];
                     NSLog(@"%@", luce1);
                 }
+                else if (data[i+1] == 0x0D)
+                {
+                    NSLog(@"Aria, %d", data[2]);
+                    aria1 = [NSString stringWithFormat:@"%d", data [i+2]];
+                    NSLog(@"%@", aria1);
+                }
             }
         }
     }
@@ -223,7 +230,7 @@ NSTimer *rssiTimer;
     
     AggiungiViewController *aggiungiViewController = [[AggiungiViewController alloc]init];
     aggiungiViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:aggiungiViewController animated:NO completion:nil];
+    [self presentViewController:aggiungiViewController animated:YES completion:nil];
     
 }
 
@@ -234,12 +241,23 @@ NSTimer *rssiTimer;
     [self presentViewController:input_Sensor1_ViewController animated:YES completion:nil];
 }
 
+-(void)achievements
+{
+    NSLog(@"achievements");
+    AchievementsViewController *achi = [[AchievementsViewController alloc] init];
+    
+    [self presentViewController:achi animated:YES completion:nil];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 /*
 #pragma mark - Navigation

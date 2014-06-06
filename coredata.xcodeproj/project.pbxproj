@@ -20,6 +20,8 @@
 		AB284F97191E164E007E7B6A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB284F96191E164E007E7B6A /* CoreBluetooth.framework */; };
 		AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */; };
 		AB2A3B781922766300703B4E /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2A3B771922766300703B4E /* StartViewController.m */; };
+		AB51901319419751000F6F2E /* AchievementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB51901219419751000F6F2E /* AchievementsViewController.m */; };
+		AB51901619419B72000F6F2E /* FirstApertureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB51901519419B72000F6F2E /* FirstApertureViewController.m */; };
 		AB64AF8F193A31DA00A604DB /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64AF8D193A31DA00A604DB /* BLE.m */; };
 		AB8C84891940E009007D6240 /* ach.png in Resources */ = {isa = PBXBuildFile; fileRef = AB8C84881940E009007D6240 /* ach.png */; };
 		AB95C0F01934B65000654C16 /* aria.png in Resources */ = {isa = PBXBuildFile; fileRef = AB95C0EB1934B65000654C16 /* aria.png */; };
@@ -90,6 +92,10 @@
 		AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Input_Sensor1_ViewController.m; sourceTree = "<group>"; };
 		AB2A3B761922766300703B4E /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		AB2A3B771922766300703B4E /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		AB51901119419751000F6F2E /* AchievementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AchievementsViewController.h; sourceTree = "<group>"; };
+		AB51901219419751000F6F2E /* AchievementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AchievementsViewController.m; sourceTree = "<group>"; };
+		AB51901419419B72000F6F2E /* FirstApertureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstApertureViewController.h; sourceTree = "<group>"; };
+		AB51901519419B72000F6F2E /* FirstApertureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstApertureViewController.m; sourceTree = "<group>"; };
 		AB64AF8C193A31DA00A604DB /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
 		AB64AF8D193A31DA00A604DB /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		AB64AF8E193A31DA00A604DB /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
@@ -229,8 +235,12 @@
 			children = (
 				C7C70A2F1914FC2C005C2917 /* AppDelegate.h */,
 				C7C70A301914FC2C005C2917 /* AppDelegate.m */,
+				AB51901419419B72000F6F2E /* FirstApertureViewController.h */,
+				AB51901519419B72000F6F2E /* FirstApertureViewController.m */,
 				AB2A3B761922766300703B4E /* StartViewController.h */,
 				AB2A3B771922766300703B4E /* StartViewController.m */,
+				AB51901119419751000F6F2E /* AchievementsViewController.h */,
+				AB51901219419751000F6F2E /* AchievementsViewController.m */,
 				AB284F9C191E1833007E7B6A /* Input_Sensor1_ViewController.h */,
 				AB284F9D191E1833007E7B6A /* Input_Sensor1_ViewController.m */,
 				ABB010521933AFBF00453A1E /* TempDetailViewController.h */,
@@ -460,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB14E560192657310011FAA2 /* Stanza.m in Sources */,
+				AB51901619419B72000F6F2E /* FirstApertureViewController.m in Sources */,
 				C7C70A311914FC2C005C2917 /* AppDelegate.m in Sources */,
 				AB14E55E192657310011FAA2 /* Dato.m in Sources */,
 				AB64AF8F193A31DA00A604DB /* BLE.m in Sources */,
@@ -472,6 +483,7 @@
 				ABCF57941934D28D00BEAF9D /* SoundViewController.m in Sources */,
 				AB284F9E191E1833007E7B6A /* Input_Sensor1_ViewController.m in Sources */,
 				AB14E56B192657900011FAA2 /* _Necessita.m in Sources */,
+				AB51901319419751000F6F2E /* AchievementsViewController.m in Sources */,
 				ABCF578B1934D0C900BEAF9D /* UmiditaViewController.m in Sources */,
 				ABB010541933AFBF00453A1E /* TempDetailViewController.m in Sources */,
 				ABCF578E1934D16A00BEAF9D /* LumViewController.m in Sources */,

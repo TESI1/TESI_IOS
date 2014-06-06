@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "Input_Sensor1_ViewController.h"
+#import "FirstApertureViewController.h"
 #import "StartViewController.h"
 
 @implementation AppDelegate
@@ -32,15 +32,22 @@
      {
          self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
          
-         Input_Sensor1_ViewController *input_Sensor1_ViewController = [[Input_Sensor1_ViewController alloc]init];
+         FirstApertureViewController *firstApertureViewController = [[FirstApertureViewController alloc]init];
          
-         self.window.rootViewController = input_Sensor1_ViewController;
+         self.window.rootViewController = firstApertureViewController;
          
          [[NSUserDefaults standardUserDefaults]setInteger:1 forKey:@"secondaApert"];
          [[NSUserDefaults standardUserDefaults] synchronize];
          
      }
 
+    UILocalNotification *notification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    
+    if (notification) {
+        [self showAlarmTemp:notification.alertBody];
+        NSLog(@"AppDelegate didFinishLaunchingWithOptions");
+        application.applicationIconBadgeNumber = 0;
+    }
     
     
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
@@ -48,6 +55,20 @@
     
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    [self showAlarmTemp:notification.alertBody];
+    application.applicationIconBadgeNumber = 0;
+    NSLog(@"AppDelegate didReceiveLocalNotification %@", notification.userInfo);
+}
+
+- (void)showAlarmTemp:(NSString *)text {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Temperatura elevata"
+                                                        message:[NSString stringWithFormat:@"temp:, %@", umi1] delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+    [alertView show];
 }
 
 

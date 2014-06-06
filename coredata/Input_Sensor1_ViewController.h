@@ -10,7 +10,7 @@
 
 @interface Input_Sensor1_ViewController : UIViewController
 {
-    IBOutlet UITextField *lblTemp;
+    IBOutlet UILabel *lblTemp;
     IBOutlet UILabel *lblHum;
     IBOutlet UILabel *lblLight;
     IBOutlet UILabel *lblSound;
@@ -42,6 +42,7 @@
     IBOutlet UIImageView *barraView;
     
     NSTimer *timerlbl;
+    NSTimer *timeralloc;
 }
 
 

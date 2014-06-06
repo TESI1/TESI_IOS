@@ -105,40 +105,52 @@
     //    GifImageView.layer.masksToBounds = YES;
     //    [self.view addSubview:GifImageView];
     
+    timeralloc = [NSTimer scheduledTimerWithTimeInterval:(float)0.5 target:self selector:@selector(allocazioni) userInfo:nil repeats:NO];
+    
     timerlbl = [NSTimer scheduledTimerWithTimeInterval:(float)2.0 target:self selector:@selector(label) userInfo:nil repeats:YES];
+    
+    
 }
 
+/*- (void)viewWillAppear:(BOOL)animated
+{
+    [self setupLocalNotifications];
+}*/
 
+- (void)setupLocalNotifications {
+    [[UIApplication sharedApplication] cancelAllLocalNotifications];
+    
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    
+    localNotification.fireDate = [NSDate date];
+    localNotification.alertBody = @"Time to get up!";
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+    localNotification.applicationIconBadgeNumber = 1; // increment
+    
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+}
+
+-(void)allocazioni
+{
+    lblTemp = [[UILabel alloc]initWithFrame:CGRectMake(35, 195, 130, 30)];
+    lblHum = [[UILabel alloc]initWithFrame:CGRectMake(200, 195, 130, 30)];
+    lblLight = [[UILabel alloc]initWithFrame:CGRectMake(35, 325, 130, 30)];
+    lblAria = [[UILabel alloc]initWithFrame:CGRectMake(200, 325, 130, 30)];
+    lblSound = [[UILabel alloc]initWithFrame:CGRectMake(35, 455, 130, 30)];
+}
 
 -(void)label
 {
     NSString *tempMax;
     tempMax = @"23";
-    temp1 =@"45";
-    
+    temp1 = @"25";
     if (temp1 > tempMax )
     {
-        NSLog(@"oooooook, %@", tempMax);
-        
+        NSLog(@"temperatura elevata, %@", tempMax);
+        [self setupLocalNotifications];
     }
     
-    lblTemp = [[UITextField alloc] initWithFrame:CGRectMake(35, 195, 130, 30)];
-    lblTemp.enabled = FALSE;
-    
-    if (temp1 == NULL)
-    {
-        [lblTemp setText:@"--"];
-    }
-    else if (temp1 != NULL)
-    {
-        [lblTemp setText:nil];
-        NSLog(@"vuoto, %@",lblTemp);
-        [lblTemp setText:temp1];
-        NSLog(@"pieno, %@",lblTemp);
-    }
-    [self.view addSubview:lblTemp];
-    
-    /*lblTemp = [[UILabel alloc]initWithFrame:CGRectMake(35, 195, 130, 30)];
     if (temp1 == NULL)
     {
         lblTemp.text = @"--";
@@ -148,10 +160,8 @@
         lblTemp.text = @"  ";
         lblTemp.text = [NSString stringWithFormat:@"%@", temp1];
     }
-    [self.view addSubview:lblTemp]; */
-    
-    lblHum = [[UILabel alloc]initWithFrame:CGRectMake(200, 195, 130, 30)];
-    
+    [self.view addSubview:lblTemp];
+
     if (umi1 == NULL)
     {
         lblHum.text = @"  ";
@@ -159,12 +169,12 @@
     }
     else if (umi1 != NULL)
     {
-        [lblHum setText:@""];
+        lblHum.text = @"  ";
         lblHum.text = [NSString stringWithFormat:@"%@", umi1];
     }
     [self.view addSubview:lblHum];
     
-    lblLight = [[UILabel alloc]initWithFrame:CGRectMake(35, 325, 130, 30)];
+    
     if (luce1 == NULL)
     {
         lblLight.text = @"--";
@@ -175,18 +185,25 @@
     }
     [self.view addSubview:lblLight];
     
-    lblAria = [[UILabel alloc]initWithFrame:CGRectMake(200, 325, 130, 30)];
-    lblAria.text = @"-lblAria-";
+    if (aria1 == NULL)
+    {
+        lblAria.text = @"--";
+    }
+    else if (aria1 != NULL)
+    {
+        lblAria.text = @"  ";
+        lblAria.text = [NSString stringWithFormat:@"%@", aria1];
+    }
     [self.view addSubview:lblAria];
     
-    lblSound = [[UILabel alloc]initWithFrame:CGRectMake(35, 455, 130, 30)];
     lblSound.text = @"-lblSound-";
     [self.view addSubview:lblSound];
     
+    /*
     lblRSSI = [[UILabel alloc]initWithFrame:CGRectMake(350, 50, 130, 30)];
     lblRSSI.text = @"-lblRSSI-";
     [self.view addSubview:lblRSSI];
-    
+    */
     
 }
 
