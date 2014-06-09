@@ -142,14 +142,14 @@
 
 -(void)label
 {
-    NSString *tempMax;
-    tempMax = @"23";
-    temp1 = @"25";
-    if (temp1 > tempMax )
-    {
-        NSLog(@"temperatura elevata, %@", tempMax);
-        //[self setupLocalNotifications];
-    }
+//    NSString *tempMax;
+//    tempMax = @"23";
+//    temp1 = @"25";
+//    if (temp1 > tempMax )
+//    {
+//        NSLog(@"temperatura elevata, %@", tempMax);
+//        //[self setupLocalNotifications];
+//    }
     
     if (temp1 == NULL)
     {

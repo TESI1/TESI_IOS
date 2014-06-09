@@ -24,16 +24,16 @@ const struct StanzaFetchedProperties StanzaFetchedProperties = {
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
-	return [NSEntityDescription insertNewObjectForEntityForName:@"Stanze" inManagedObjectContext:moc_];
+	return [NSEntityDescription insertNewObjectForEntityForName:@"Stanza" inManagedObjectContext:moc_];
 }
 
 + (NSString*)entityName {
-	return @"Stanze";
+	return @"Stanza";
 }
 
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
-	return [NSEntityDescription entityForName:@"Stanze" inManagedObjectContext:moc_];
+	return [NSEntityDescription entityForName:@"Stanza" inManagedObjectContext:moc_];
 }
 
 - (StanzaID*)objectID {

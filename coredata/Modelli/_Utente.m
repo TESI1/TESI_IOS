@@ -24,11 +24,11 @@ const struct UtenteFetchedProperties UtenteFetchedProperties = {
 
 + (id)insertInManagedObjectContext:(NSManagedObjectContext*)moc_ {
 	NSParameterAssert(moc_);
-	return [NSEntityDescription insertNewObjectForEntityForName:@"Utenti" inManagedObjectContext:moc_];
+	return [NSEntityDescription insertNewObjectForEntityForName:@"Utente" inManagedObjectContext:moc_];
 }
 
 + (NSString*)entityName {
-	return @"Utenti";
+	return @"Utente";
 }
 
 + (NSEntityDescription*)entityInManagedObjectContext:(NSManagedObjectContext*)moc_ {
