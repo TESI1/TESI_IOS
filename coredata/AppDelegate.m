@@ -19,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [MagicalRecord setupCoreDataStackWithStoreNamed:@"coredata.sqlite"];
+
+    
      if ([[NSUserDefaults standardUserDefaults] integerForKey:@"secondaApert"])
     {
         self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

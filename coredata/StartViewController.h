@@ -32,5 +32,6 @@
 }
 
 @property (strong, nonatomic) BLE *ble;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end
